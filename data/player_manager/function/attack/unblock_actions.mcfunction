@@ -5,4 +5,5 @@
 
 function player_manager:action_block/remove {id:"attack",action:"attack"}
 function player_manager:action_block/remove {id:"attack",action:"guard"}
+# 旧形式の回避制限も片付ける
 function player_manager:action_block/remove {id:"attack",action:"dodge"}
