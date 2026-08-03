@@ -41,7 +41,7 @@
 						{
 							"function": "minecraft:set_custom_data",
 							"tag": {
-								"AttackID": "holy_spire.0_pre"
+								"AttackID": "holy_spire"
 							}
 						}
 					]

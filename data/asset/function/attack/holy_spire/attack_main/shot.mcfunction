@@ -1,4 +1,4 @@
-#> asset:attack/holy_spire.1_main/attack_main/shot
+#> asset:attack/holy_spire/attack_main/shot
 #
 
 # 発射する

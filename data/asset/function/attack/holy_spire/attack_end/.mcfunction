@@ -1,4 +1,5 @@
-#> asset:attack/holy_spire.0_pre/standby_start/
+#> asset:attack/holy_spire/attack_end/
 #
 
+# 発射前に別の状態へ遷移した場合、待機中の槍を片付ける
 execute as @e[tag=Object.proj.holy_spire,distance=..16] if score @s OwnerID = @n[tag=_this,distance=..0.01] EntityID run function asset:object/proj.holy_spire/cancel

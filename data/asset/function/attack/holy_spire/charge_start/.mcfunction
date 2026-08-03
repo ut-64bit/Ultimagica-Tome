@@ -1,4 +1,4 @@
-#> asset:attack/holy_spire.0_pre/charge_start/
+#> asset:attack/holy_spire/charge_start/
 #
 
 attribute @s movement_speed modifier add player:cooltime -0.4 add_multiplied_base
