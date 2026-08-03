@@ -15,11 +15,6 @@
 	scoreboard objectives add StaminaRecoverDelay dummy
 	scoreboard objectives add StaminaRecoverSpeed dummy
 
-	#> 攻撃後のいかなる行動もできない時間
-	scoreboard objectives add HardCoolTime dummy
-	#> 攻撃後の移動速度が下がっている時間
-	scoreboard objectives add SoftCoolTime dummy
-
 	#> 攻撃
 	scoreboard objectives add ChargePhase dummy
 	scoreboard objectives add ChargeTime dummy
@@ -43,6 +38,7 @@
 
 	#> スタン
 	scoreboard objectives add StunTime dummy
+	scoreboard objectives add StaggerTime dummy
 
 	#> キー入力
 	scoreboard objectives add InputKey.Sprint dummy

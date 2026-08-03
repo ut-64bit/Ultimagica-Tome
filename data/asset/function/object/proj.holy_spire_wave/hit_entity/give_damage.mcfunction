@@ -10,7 +10,5 @@ function api:damage/give_damage
 	function #p_motion:xyz
 
 # 怯む
-	function api:player/fsm/request {state:"idle"}
+	function api:player/stagger {duration:6}
 	scoreboard players set @s ComboTimer 0
-	scoreboard players set @s HardCoolTime 2
-	scoreboard players set @s SoftCoolTime 6

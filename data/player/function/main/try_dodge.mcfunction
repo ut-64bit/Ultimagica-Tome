@@ -10,5 +10,4 @@
 # wind_arrowのホールド中だけは攻撃硬直を無視して回避できる
 	execute if data storage player:context this.StateMachine{current:"attack_hold",state_data:{AttackID:"wind_arrow"}} run return run function player_manager:fsm/request {state:"dodge"}
 
-execute if score @s HardCoolTime matches 1.. run return fail
 return run function player_manager:fsm/request {state:"dodge"}
