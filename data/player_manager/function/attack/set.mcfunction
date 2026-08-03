@@ -18,6 +18,9 @@
 	function player_manager:fsm/request_with with storage player:temp request_with
 	data remove storage player:temp request_with
 
+	# 攻撃中の行動を制限する
+	function player_manager:attack/block_actions
+
 	execute store result score @s HardCoolTime run data get storage asset:attack HardCoolTime
 	scoreboard players operation @s SoftCoolTime = @s HardCoolTime
 	scoreboard players add @s SoftCoolTime 4
