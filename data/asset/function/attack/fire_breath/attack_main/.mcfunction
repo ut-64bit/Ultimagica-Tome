@@ -18,4 +18,4 @@ execute if score @s AttackTime matches 1 run function asset:attack/fire_breath/a
 	execute if score @s AttackTime matches 6 if entity @s[tag=UsingItem] run function asset:attack/fire_breath/attack_main/repeat
 
 # 終了
-	execute if score @s AttackTime matches 19.. run function player_manager:fsm/request {state:"idle"}
+	execute if score @s AttackTime matches 15.. run function player_manager:fsm/request {state:"idle"}

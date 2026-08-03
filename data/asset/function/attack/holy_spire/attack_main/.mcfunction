@@ -5,4 +5,4 @@
 execute if score @s AttackTime matches 4 run function asset:attack/holy_spire/attack_main/shot
 
 # 発射後の硬直を含めて終了する
-execute if score @s AttackTime matches 19.. run function player_manager:fsm/request {state:"idle"}
+execute if score @s AttackTime matches 15.. run function player_manager:fsm/request {state:"idle"}

@@ -3,4 +3,4 @@
 
 execute if score @s AttackTime matches 1 run function asset:attack/wind_blast/attack_main/normal/shot
 
-execute if score @s AttackTime matches 16.. run function player_manager:fsm/request {state:"idle"}
+execute if score @s AttackTime matches 12.. run function player_manager:fsm/request {state:"idle"}

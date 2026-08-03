@@ -13,7 +13,7 @@
 	execute if score @s AttackTime matches 9 if entity @s[tag=UsingItem] run function asset:attack/thunder_spark/attack_main/repeat
 
 # 終了
-	execute if score @s AttackTime matches 22.. run function player_manager:fsm/request {state:"idle"}
+	execute if score @s AttackTime matches 18.. run function player_manager:fsm/request {state:"idle"}
 
 # MP消費
 	data modify storage api: in.Amount set value 0

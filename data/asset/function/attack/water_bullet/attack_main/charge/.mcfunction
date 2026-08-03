@@ -10,4 +10,4 @@ execute if score @s AttackTime matches 9 anchored eyes positioned ^-.57063 ^0.18
 # ロックオンマーカーを表示する
 	execute if data storage player:context this.StateMachine.state_data.Field.TargetID run function asset:attack/_common/vfx/lockon_marker
 
-execute if score @s AttackTime matches 21.. run function player_manager:fsm/request {state:"idle"}
+execute if score @s AttackTime matches 17.. run function player_manager:fsm/request {state:"idle"}

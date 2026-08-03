@@ -7,4 +7,4 @@ execute if score @s AttackTime matches 6 run function asset:attack/thunder_strik
 # ロックオンマーカーを表示する
 	execute if data storage player:context this.StateMachine.state_data.Field.TargetID run function asset:attack/_common/vfx/lockon_marker
 
-execute if score @s AttackTime matches 20.. run function player_manager:fsm/request {state:"idle"}
+execute if score @s AttackTime matches 16.. run function player_manager:fsm/request {state:"idle"}

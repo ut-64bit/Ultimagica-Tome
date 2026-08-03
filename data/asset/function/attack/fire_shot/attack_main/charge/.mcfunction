@@ -9,4 +9,4 @@
 	execute if score @s AttackTime matches 6 run function asset:attack/fire_shot/attack_main/charge/shot
 
 # 終了
-	execute if score @s AttackTime matches 19.. run function player_manager:fsm/request {state:"idle"}
+	execute if score @s AttackTime matches 15.. run function player_manager:fsm/request {state:"idle"}
