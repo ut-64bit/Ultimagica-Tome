@@ -1,4 +1,6 @@
-#> asset:item/magic_rod/attack/
+#> player:item/attack
+#
+# 現在使用しているアイテムのAttackIDから攻撃を開始する
 #
 
 # 先行入力を消す
@@ -11,13 +13,11 @@
 # 攻撃のデータを取得する
 	data modify storage api: in.ID set from storage player:item CurItem.components."minecraft:custom_data".AttackID
 
-# MP消費
+# スタミナを消費する
 	execute unless function api:attack/require_stamina run return fail
 
-# 攻撃
+# 攻撃を開始する
 	function player_manager:attack/set with storage api: in
 
 # 演出
-	# playsound entity.evoker.cast_spell player @s ~ ~ ~ 2 1 1
-	# playsound entity.evoker.cast_spell player @a[tag=!_this] ~ ~ ~ 1.5 1
 	particle enchant ~ ~1 ~ 0.2 0.5 0.2 0 10 force @a

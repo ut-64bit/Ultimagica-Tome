@@ -14,6 +14,9 @@
 	execute store success storage player:item Swapped byte 1 run data modify storage player:temp PreItemCpy set from storage player:item CurItem
 	data remove storage player:temp PreItemCpy
 
+# 持ち替え時に攻撃をキャンセルする
+	execute if data storage player:item {Swapped:true} run function player:item/cancel_attack
+
 # 装備を外したときの処理をマクロで呼び出す
 	execute if data storage player:item {Swapped:true} run function player:item/call_unequip.m with storage player:item PreItem.components."minecraft:custom_data"
 
@@ -26,6 +29,12 @@
 # 右クリックの処理を呼び出す
 	execute if score @s UsingTime matches 1 run function player:item/call_trigger_right.m with storage player:item CurItem.components."minecraft:custom_data"
 	execute if score @s UsingTime matches 1.. run function player:item/call_hold_right.m with storage player:item CurItem.components."minecraft:custom_data"
+
+# AttackIDを持つアイテムの使用時に攻撃を予約する
+	execute if score @s UsingTime matches 1 if data storage player:item CurItem.components."minecraft:custom_data".AttackID run scoreboard players set @s AttackTimer 8
+
+# 予約された攻撃を実行する
+	execute if score @s AttackTimer matches 1.. unless score @s HardCoolTime matches 1.. if data storage player:item CurItem.components."minecraft:custom_data".AttackID run function player:item/attack
 
 # tick処理をマクロで呼び出す
 	function player:item/call_tick.m with storage player:item CurItem.components."minecraft:custom_data"

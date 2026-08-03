@@ -2,5 +2,3 @@
 #
 # アイテムを使ったときに呼び出されるメソッド
 #
-
-scoreboard players set @s AttackTimer 8
