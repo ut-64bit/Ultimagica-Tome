@@ -1,0 +1,28 @@
+[
+	{
+		"function": "set_components",
+		"components": {
+			"attack_range": {
+				"min_reach": 0,
+				"max_reach": 0,
+				"hitbox_margin": 0
+			},
+			"piercing_weapon": {
+				"deals_knockback": false,
+				"dismounts": false
+			},
+			"enchantment_glint_override": false,
+			"tooltip_display": {
+				"hidden_components": [
+					"enchantments"
+				]
+			}
+		}
+	},
+	{
+		"function": "set_enchantments",
+		"enchantments": {
+			"lib:left": 1
+		}
+	}
+]

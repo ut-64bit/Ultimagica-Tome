@@ -1,0 +1,19 @@
+{
+	"function": "set_lore",
+	"lore": [
+		{
+			"translate": "ut_magic.magic.crystal",
+			"color": "gray"
+		},
+		{
+			"translate": "ut_magic.tooltip.element",
+			"color": "gray",
+			"extra": [
+				{
+					"translate": "ut_magic.element.magic"
+				}
+			]
+		}
+	],
+	"mode": "replace_all"
+}

@@ -1,0 +1,48 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:stick",
+					"functions": [
+						{
+							"function": "reference",
+							"name": "asset:weapon_base"
+						},
+						{
+							"function": "reference",
+							"name": "asset:tooltip/magic/thunder"
+						},
+						{
+							"function": "set_name",
+							"name": {
+								"translate": "ut_magic.spell.thunder_spire",
+								"color": "white",
+								"italic": false
+							},
+							"target": "custom_name"
+						},
+						{
+							"function": "set_lore",
+							"lore": [
+								{
+									"text": "雷の槍を投げ放つ",
+									"color": "gray"
+								}
+							],
+							"mode": "append"
+						},
+						{
+							"function": "minecraft:set_custom_data",
+							"tag": {
+								"AttackID": "thunder_spire"
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,38 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:stick",
+					"functions": [
+						{
+							"function": "reference",
+							"name": "asset:weapon_base"
+						},
+						{
+							"function": "reference",
+							"name": "asset:tooltip/magic/holy"
+						},
+						{
+							"function": "set_name",
+							"name": {
+								"translate": "ut_magic.spell.holy_rain",
+								"color": "white",
+								"italic": false
+							},
+							"target": "custom_name"
+						},
+						{
+							"function": "minecraft:set_custom_data",
+							"tag": {
+								"AttackID": "holy_rain"
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

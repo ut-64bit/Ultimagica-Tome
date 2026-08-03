@@ -1,0 +1,10 @@
+{
+	"criteria": {
+		"trigger": {
+			"trigger": "tick"
+		}
+	},
+	"rewards": {
+		"function": "player:handler/first_join"
+	}
+}

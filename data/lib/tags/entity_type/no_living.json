@@ -1,0 +1,23 @@
+{
+	"values": [
+		"marker",
+		"armor_stand",
+		"block_display",
+		"item_display",
+		"text_display",
+		"item",
+		"item_frame",
+		"glow_item_frame",
+		"#boat",
+		"minecart",
+		"tnt_minecart",
+		"chest_minecart",
+		"hopper_minecart",
+		"furnace_minecart",
+		"spawner_minecart",
+		"command_block_minecart",
+		"#impact_projectiles",
+		"#deflects_projectiles",
+		"#redirectable_projectile"
+	]
+}

@@ -1,0 +1,61 @@
+{
+	"condition": "any_of",
+	"terms": [
+		{
+			"condition": "inverted",
+			"term": [
+				{
+					"condition": "any_of",
+					"terms": [
+						{
+							"condition": "entity_properties",
+							"entity": "this",
+							"predicate": {
+								"location": {
+									"block": {
+										"blocks": "#lib:no_collision"
+									}
+								}
+							}
+						},
+						{
+							"condition": "entity_properties",
+							"entity": "this",
+							"predicate": {
+								"location": {
+									"block": {
+										"blocks": "#lib:shaped"
+									}
+								}
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"condition": "reference",
+			"name": "lib:block_check/fence"
+		},
+		{
+			"condition": "reference",
+			"name": "lib:block_check/wall"
+		},
+		{
+			"condition": "reference",
+			"name": "lib:block_check/slab"
+		},
+		{
+			"condition": "reference",
+			"name": "lib:block_check/stair"
+		},
+		{
+			"condition": "reference",
+			"name": "lib:block_check/door"
+		},
+		{
+			"condition": "reference",
+			"name": "lib:block_check/campfire"
+		}
+	]
+}

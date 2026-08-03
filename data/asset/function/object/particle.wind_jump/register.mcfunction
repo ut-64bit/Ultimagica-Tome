@@ -1,0 +1,14 @@
+#> asset:object/particle.wind_jump/register
+#
+# クラスの登録処理
+#
+
+# 継承
+	# data modify storage asset:object Extends append value
+	# function asset:object/_extends/
+# 抽象クラスか
+	data modify storage asset:object IsAbstract set value false
+# ID
+	data modify storage asset:object ID set value "particle.wind_jump"
+# フィールド
+	# data modify storage asset:object Field.Value set value

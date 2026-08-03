@@ -1,0 +1,11 @@
+{
+	"replace": false,
+	"values": [
+		"#slabs",
+		"#doors",
+		"#stairs",
+		"#fences",
+		"#walls",
+		"campfire"
+	]
+}

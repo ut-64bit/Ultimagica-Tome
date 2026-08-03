@@ -1,0 +1,13 @@
+{
+	"function": "set_custom_model_data",
+	"floats": {
+		"mode": "replace_all",
+		"values": [
+			{
+				"type": "score",
+				"target": "this",
+				"score": "General.Tick"
+			}
+		]
+	}
+}

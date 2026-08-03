@@ -1,0 +1,52 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:stick",
+					"functions": [
+						{
+							"function": "reference",
+							"name": "asset:weapon_base"
+						},
+						{
+							"function": "reference",
+							"name": "asset:tooltip/magic/crystal"
+						},
+						{
+							"function": "set_name",
+							"name": {
+								"translate": "ut_magic.spell.crystal_wave",
+								"color": "white",
+								"italic": false
+							},
+							"target": "custom_name"
+						},
+						{
+							"function": "set_lore",
+							"lore": [
+								{
+									"text": "前方の地面に、無数の結晶を生成する",
+									"color": "gray"
+								},
+								{
+									"text": "結晶は短時間で自壊し、ガードを貫く",
+									"color": "gray"
+								}
+							],
+							"mode": "append"
+						},
+						{
+							"function": "minecraft:set_custom_data",
+							"tag": {
+								"AttackID": "crystal_wave"
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

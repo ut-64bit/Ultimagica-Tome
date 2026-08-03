@@ -1,0 +1,42 @@
+[
+	{
+		"function": "reference",
+		"name": "asset:using_item"
+	},
+	{
+		"function": "reference",
+		"name": "lib:left"
+	},
+	{
+		"function": "set_item",
+		"item": "stick"
+	},
+	{
+		"function": "set_custom_data",
+		"tag": {
+			"ID": "magic_rod",
+			"AttackID": "magic_bullet"
+		}
+	},
+	{
+		"function": "set_components",
+		"components": {
+			"max_stack_size": 1,
+			"item_model": "ut_magic:weapon"
+		}
+	},
+	{
+		"function": "set_custom_model_data",
+		"strings": {
+			"values": [
+				"magic_rod",
+				"basic_rod"
+			],
+			"mode": "replace_all"
+		}
+	},
+	{
+		"function": "reference",
+		"name": "asset:magic_rod/standby"
+	}
+]

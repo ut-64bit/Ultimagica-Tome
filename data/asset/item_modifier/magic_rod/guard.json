@@ -1,0 +1,18 @@
+[
+	{
+		"function": "set_custom_data",
+		"tag": {
+			"Mode": "guard"
+		}
+	},
+	{
+		"function": "set_custom_model_data",
+		"strings": {
+			"values": [
+				"guard"
+			],
+			"mode": "replace_section",
+			"offset": 2
+		}
+	}
+]

@@ -1,0 +1,18 @@
+[
+	{
+		"function": "set_custom_data",
+		"tag": {
+			"Mode": "standby"
+		}
+	},
+	{
+		"function": "set_custom_model_data",
+		"strings": {
+			"values": [
+				"standby"
+			],
+			"mode": "replace_section",
+			"offset": 2
+		}
+	}
+]

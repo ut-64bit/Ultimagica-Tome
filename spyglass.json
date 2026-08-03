@@ -1,0 +1,16 @@
+{
+	"env": {
+		"gameVersion": "1.21.11",
+		"dependencies": [
+			"@vanilla-datapack",
+			"@vanilla-resourcepack",
+			"@vanilla-mcdoc",
+			"../OhMyDat-1.0.3.zip",
+			"../Hirobao_Player_Motion.zip"
+		]
+	},
+	"snippet": {
+		"oh_my_dat": "oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].${1:data}",
+		"registry": "registry: _[-4][-4][-4][-4][-4][-4][-4][-4].${1:data}"
+	}
+}

@@ -1,0 +1,48 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:stick",
+					"functions": [
+						{
+							"function": "reference",
+							"name": "asset:weapon_base"
+						},
+						{
+							"function": "reference",
+							"name": "asset:tooltip/magic/water"
+						},
+						{
+							"function": "set_name",
+							"name": {
+								"translate": "ut_magic.spell.water_rain",
+								"color": "white",
+								"italic": false
+							},
+							"target": "custom_name"
+						},
+						{
+							"function": "set_lore",
+							"lore": [
+								{
+									"text": "巨大な水球を放ち、雨雲を呼ぶ",
+									"color": "gray"
+								}
+							],
+							"mode": "append"
+						},
+						{
+							"function": "minecraft:set_custom_data",
+							"tag": {
+								"AttackID": "water_rain"
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,286 @@
+{
+  "condition": "any_of",
+  "terms": [
+    {
+      "condition": "any_of",
+      "terms": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "location": {
+              "block": {
+                "blocks": "#walls",
+                "state": {
+                  "up": "false"
+                }
+              }
+            },
+            "distance": {
+              "x": {
+                "min": 0.31250,
+                "max": 0.68750
+              },
+              "z": {
+                "min": 0.31250,
+                "max": 0.68750
+              }
+            }
+          }
+        },
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "location": {
+              "block": {
+                "blocks": "#walls",
+                "state": {
+                  "up": "true"
+                }
+              }
+            },
+            "distance": {
+              "x": {
+                "min": 0.25,
+                "max": 0.75
+              },
+              "z": {
+                "min": 0.25,
+                "max": 0.75
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "any_of",
+      "terms": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "location": {
+              "block": {
+                "blocks": "#walls",
+                "state": {
+                  "east": "low"
+                }
+              }
+            },
+            "distance": {
+              "x": {
+                "min": 0.68750,
+                "max": 1.0
+              },
+              "y": {
+                "min": 0.0,
+                "max": 0.8750
+              },
+              "z": {
+                "min": 0.31250,
+                "max": 0.68750
+              }
+            }
+          }
+        },
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "location": {
+              "block": {
+                "blocks": "#walls",
+                "state": {
+                  "east": "tall"
+                }
+              }
+            },
+            "distance": {
+              "x": {
+                "min": 0.68750,
+                "max": 1.0
+              },
+              "z": {
+                "min": 0.31250,
+                "max": 0.68750
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "any_of",
+      "terms": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "location": {
+              "block": {
+                "blocks": "#walls",
+                "state": {
+                  "west": "low"
+                }
+              }
+            },
+            "distance": {
+              "x": {
+                "min": 0.0,
+                "max": 0.31250
+              },
+              "y": {
+                "min": 0.0,
+                "max": 0.8750
+              },
+              "z": {
+                "min": 0.31250,
+                "max": 0.68750
+              }
+            }
+          }
+        },
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "location": {
+              "block": {
+                "blocks": "#walls",
+                "state": {
+                  "west": "tall"
+                }
+              }
+            },
+            "distance": {
+              "x": {
+                "min": 0.0,
+                "max": 0.31250
+              },
+              "z": {
+                "min": 0.31250,
+                "max": 0.68750
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "any_of",
+      "terms": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "location": {
+              "block": {
+                "blocks": "#walls",
+                "state": {
+                  "south": "low"
+                }
+              }
+            },
+            "distance": {
+              "x": {
+                "min": 0.31250,
+                "max": 0.68750
+              },
+              "y": {
+                "min": 0.0,
+                "max": 0.8750
+              },
+              "z": {
+                "min": 0.68750,
+                "max": 1.0
+              }
+            }
+          }
+        },
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "location": {
+              "block": {
+                "blocks": "#walls",
+                "state": {
+                  "south": "tall"
+                }
+              }
+            },
+            "distance": {
+              "x": {
+                "min": 0.31250,
+                "max": 0.68750
+              },
+              "z": {
+                "min": 0.68750,
+                "max": 1.0
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "any_of",
+      "terms": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "location": {
+              "block": {
+                "blocks": "#walls",
+                "state": {
+                  "north": "low"
+                }
+              }
+            },
+            "distance": {
+              "x": {
+                "min": 0.31250,
+                "max": 0.68750
+              },
+              "y": {
+                "min": 0.0,
+                "max": 0.8750
+              },
+              "z": {
+                "min": 0.0,
+                "max": 0.31250
+              }
+            }
+          }
+        },
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "location": {
+              "block": {
+                "blocks": "#walls",
+                "state": {
+                  "north": "tall"
+                }
+              }
+            },
+            "distance": {
+              "x": {
+                "min": 0.31250,
+                "max": 0.68750
+              },
+              "z": {
+                "min": 0.0,
+                "max": 0.31250
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
