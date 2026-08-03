@@ -8,3 +8,4 @@ execute if data storage player:context this.StateMachine._transition{target:"att
 execute if data storage player:context this.StateMachine._transition{target:"attack_main"} run return 0
 
 function player_manager:attack/unblock_actions
+attribute @s movement_speed modifier remove player:cooltime

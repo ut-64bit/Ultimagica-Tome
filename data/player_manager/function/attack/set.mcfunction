@@ -21,18 +21,12 @@
 	# 攻撃中の行動を制限する
 	function player_manager:attack/block_actions
 
-	execute store result score @s HardCoolTime run data get storage asset:attack HardCoolTime
-	scoreboard players operation @s SoftCoolTime = @s HardCoolTime
-	scoreboard players add @s SoftCoolTime 4
-
 # コンボが切れる時間
 	scoreboard players set @s ComboTimer 4
 
 	data remove storage asset:attack ID
 	data remove storage asset:attack ChargeTime
 	data remove storage asset:attack IsHoldable
-	data remove storage asset:attack HardCoolTime
-	data remove storage asset:attack SoftCoolTime
 	data remove storage asset:attack ComboTime
 	data remove storage asset:attack RequireStamina
 	data remove storage asset:attack Field

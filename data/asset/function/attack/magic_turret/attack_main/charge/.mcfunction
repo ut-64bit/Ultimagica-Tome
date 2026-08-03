@@ -3,4 +3,4 @@
 
 execute if score @s AttackTime matches 1 run function asset:attack/magic_turret/attack_main/charge/shot
 
-execute if score @s AttackTime matches 1.. run function player_manager:fsm/request {state:"idle"}
+execute if score @s AttackTime matches 13.. run function player_manager:fsm/request {state:"idle"}

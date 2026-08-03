@@ -12,8 +12,6 @@
 # チャージ完了後、ホールドできるか
 	data modify storage asset:attack IsHoldable set value true
 
-# クールタイム
-	data modify storage asset:attack HardCoolTime set value 7
 
 # 消費スタミナ
 	data modify storage asset:attack RequireStamina set value 8

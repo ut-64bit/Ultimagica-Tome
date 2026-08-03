@@ -36,3 +36,4 @@
 	attribute @s movement_speed modifier remove player:charge
 	attribute @s movement_speed modifier remove player:cooltime
 	attribute @s movement_speed modifier remove player:hold
+	attribute @s movement_speed modifier remove player:stagger
