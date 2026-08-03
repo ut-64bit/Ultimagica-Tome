@@ -1,4 +1,4 @@
-# 引数: {state:"namespace:path/to/state"}
+# 引数: {state:"状態名"}
 # 状態遷移を予約します。同じtick内で後から予約された遷移が優先されます。
 # 遷移適用時に state_data は空になります。
 execute unless data storage player:context this.StateMachine.current run return fail
