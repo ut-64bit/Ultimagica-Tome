@@ -10,7 +10,7 @@
 	function #p_motion:xyz
 
 # 無敵
-	tag @s add Dodge
+	tag @s add Player.Dodge
 	scoreboard players set @s Dodge.Duration 6
 
 # 演出

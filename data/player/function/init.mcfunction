@@ -29,8 +29,8 @@
 
 # 攻撃初期化
 	function oh_my_dat:please
-	data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.AttackState set value "standby"
-	# data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.OldAttackState set value "standby"
+	data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.StateMachine set value {current:"idle",time:0,state_data:{}}
+	data modify storage player:context this.StateMachine set value {current:"idle",time:0,state_data:{}}
 	data remove storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Attack
 	attribute @s movement_speed modifier remove player:attack
 	attribute @s movement_speed modifier remove player:charge

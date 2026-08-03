@@ -12,6 +12,5 @@
 	function player:init
 	function oh_my_dat:please
 	data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Weapon.Type set value "basic_rod"
-	data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.AttackState set value "standby"
 
-# function player_manager:api/fsm/start {state:"player:state/idle"}
+	function api:player/fsm/start {state:"idle"}
