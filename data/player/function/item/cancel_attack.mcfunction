@@ -3,7 +3,5 @@
 # アイテムを持ち替えたとき、実行中の攻撃をキャンセルする
 #
 
-execute if data storage player:context this.StateMachine{current:"attack_charge"} run scoreboard players add @s HardCoolTime 10
-
 # attack_mainまで進んだ攻撃は最後まで実行する
 execute unless data storage player:context this.StateMachine{current:"attack_main"} if data storage player:context this.StateMachine.state_data.AttackID run function api:attack/cancel

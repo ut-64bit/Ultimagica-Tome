@@ -30,7 +30,7 @@
 	execute if score @s UsingTime matches 1 if data storage player:item CurItem.components."minecraft:custom_data".AttackID run scoreboard players set @s AttackTimer 8
 
 # 予約された攻撃を実行する
-	execute if score @s AttackTimer matches 1.. unless score @s HardCoolTime matches 1.. if data storage player:item CurItem.components."minecraft:custom_data".AttackID run function player:item/attack
+	execute if score @s AttackTimer matches 1.. unless data storage player:context this.ActionBlock[{action:"attack"}] if data storage player:item CurItem.components."minecraft:custom_data".AttackID run function player:item/attack
 
 # tick処理をマクロで呼び出す
 	function player:item/call_tick.m with storage player:item CurItem.components."minecraft:custom_data"
