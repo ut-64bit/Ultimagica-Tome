@@ -3,4 +3,4 @@
 
 data modify storage api: in set value { Damage:3, Attribute:{ Unblockable:true }}
 function api:damage/create_attack_data
-data modify storage asset:context this.AttackData set from storage api: out.AttackData
+data modify storage player:context this.StateMachine.state_data.Field.AttackData set from storage api: out.AttackData

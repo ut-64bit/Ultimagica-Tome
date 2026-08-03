@@ -9,4 +9,4 @@ execute if score @s AttackTime matches 1 anchored eyes positioned ^-.10 ^-.15 ^0
 execute if score @s AttackTime matches 2 anchored eyes positioned ^-.25 ^-.20 ^0.1 facing ^-.25 ^-.05 ^2 run function asset:attack/holy_shot/attack_main/charge/shot
 execute if score @s AttackTime matches 2 anchored eyes positioned ^-.40 ^-.25 ^0.1 facing ^-.40 ^-.10 ^2 run function asset:attack/holy_shot/attack_main/charge/shot
 
-execute if score @s AttackTime matches 4.. run data modify storage asset:context State set value "standby"
+execute if score @s AttackTime matches 4.. run function player_manager:fsm/request {state:"idle"}

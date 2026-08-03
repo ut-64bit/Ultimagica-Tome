@@ -6,4 +6,4 @@ execute if score @s AttackTime matches 1 positioned ^0.3 ^ ^0.5 facing ^1.6 ^ ^1
 execute if score @s AttackTime matches 1 positioned ^0.0 ^ ^0.5 facing ^0 ^0.01 ^10 run function asset:attack/crystal_wave/attack_main/normal/shot
 execute if score @s AttackTime matches 1 positioned ^-0.3 ^ ^0.5 facing ^-1.6 ^ ^10 run function asset:attack/crystal_wave/attack_main/normal/shot
 
-execute if score @s AttackTime matches 8.. run data modify storage asset:context State set value "standby"
+execute if score @s AttackTime matches 8.. run function player_manager:fsm/request {state:"idle"}

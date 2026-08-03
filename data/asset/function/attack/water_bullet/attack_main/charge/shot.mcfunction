@@ -3,7 +3,7 @@
 
 # 発射する
 	function api:clear_in
-	data modify storage api: in.FieldOverride.TargetID set from storage asset:context this.TargetID
+	data modify storage api: in.FieldOverride.TargetID set from storage player:context this.StateMachine.state_data.Field.TargetID
 	function api:object/summon.m {ID:"proj.water_bullet_charge"}
 
 # 演出

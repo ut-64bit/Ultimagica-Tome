@@ -9,7 +9,7 @@
 	execute anchored eyes positioned ^-0.2 ^-0.1 ^1 run function asset:attack/thunder_strike/charge_main/vfx/
 
 # ロックオンする
-	execute unless data storage asset:context this.TargetID anchored eyes positioned ^ ^ ^ run function asset:attack/thunder_strike/charge_main/ray
+	execute unless data storage player:context this.StateMachine.state_data.Field.TargetID anchored eyes positioned ^ ^ ^ run function asset:attack/thunder_strike/charge_main/ray
 
 # ロックオンマーカーを表示する
-	execute if data storage asset:context this.TargetID run function asset:attack/_common/vfx/lockon_marker
+	execute if data storage player:context this.StateMachine.state_data.Field.TargetID run function asset:attack/_common/vfx/lockon_marker

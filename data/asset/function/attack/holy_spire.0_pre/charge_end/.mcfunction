@@ -8,5 +8,5 @@
 # 演出
 	playsound block.amethyst_block.place player @a ~ ~ ~ 1 1.1
 
-data modify storage player:context this.NextAttack set value "holy_spire.1_main"
-data modify storage asset:context State set value "standby"
+# 通常の発動遷移時だけ、後半攻撃へ直接つなぐ
+execute if data storage player:context this.StateMachine._transition{target:"attack_main"} run function player_manager:attack/chain {ID:"holy_spire.1_main"}

@@ -7,4 +7,4 @@ execute if score @s AttackTime matches 1 anchored eyes positioned ^-0.2 ^-0.2 ^0
 execute if score @s AttackTime matches 2 anchored eyes positioned ^-0.2 ^-0.0 ^0.5 run function asset:attack/wind_arrow/attack_main/charge/shot
 execute if score @s AttackTime matches 3 anchored eyes positioned ^-0.2 ^-0.4 ^0.5 run function asset:attack/wind_arrow/attack_main/charge/shot
 
-execute if score @s AttackTime matches 12.. run data modify storage asset:context State set value "standby"
+execute if score @s AttackTime matches 12.. run function player_manager:fsm/request {state:"idle"}

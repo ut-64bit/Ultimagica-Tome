@@ -10,9 +10,7 @@ function api:damage/give_damage
 	function #p_motion:xyz
 
 # 怯む
-	function oh_my_dat:please
-	data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.AttackState set value "standby"
-	data remove storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.NextAttack
+	function api:player/fsm/request {state:"idle"}
 	scoreboard players set @s ComboTimer 0
 	scoreboard players set @s HardCoolTime 2
 	scoreboard players set @s SoftCoolTime 6

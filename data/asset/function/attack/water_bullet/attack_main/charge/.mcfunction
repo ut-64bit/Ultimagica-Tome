@@ -8,6 +8,6 @@ execute if score @s AttackTime matches 7 anchored eyes positioned ^-.35267 ^-.48
 execute if score @s AttackTime matches 9 anchored eyes positioned ^-.57063 ^0.18541 ^0.5 facing ^-.57063 ^0.18541 ^1 run function asset:attack/water_bullet/attack_main/charge/shot
 
 # ロックオンマーカーを表示する
-	execute if data storage asset:context this.TargetID run function asset:attack/_common/vfx/lockon_marker
+	execute if data storage player:context this.StateMachine.state_data.Field.TargetID run function asset:attack/_common/vfx/lockon_marker
 
-execute if score @s AttackTime matches 9.. run data modify storage asset:context State set value "standby"
+execute if score @s AttackTime matches 9.. run function player_manager:fsm/request {state:"idle"}
