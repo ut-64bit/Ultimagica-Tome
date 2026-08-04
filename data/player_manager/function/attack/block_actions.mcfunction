@@ -5,3 +5,4 @@
 
 function player_manager:action_block/add {id:"attack",action:"attack"}
 function player_manager:action_block/add {id:"attack",action:"guard"}
+function player_manager:action_block/add {id:"attack",action:"jump"}

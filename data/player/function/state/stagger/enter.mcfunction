@@ -9,3 +9,4 @@ attribute @s movement_speed modifier add player:stagger -0.4 add_multiplied_base
 function player_manager:action_block/add {id:"stagger",action:"attack"}
 function player_manager:action_block/add {id:"stagger",action:"guard"}
 function player_manager:action_block/add {id:"stagger",action:"dodge"}
+function player_manager:action_block/add {id:"stagger",action:"jump"}

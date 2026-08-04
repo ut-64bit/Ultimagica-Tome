@@ -1,2 +1,1 @@
-data modify storage player:context this.ActionBlock append value {}
-$data modify storage player:context this.ActionBlock[-1] set value {id:"$(id)", action:"$(action)"}
+$execute unless data storage player:context this.ActionBlock[{id:"$(id)",action:"$(action)"}] run data modify storage player:context this.ActionBlock append value {id:"$(id)",action:"$(action)"}
