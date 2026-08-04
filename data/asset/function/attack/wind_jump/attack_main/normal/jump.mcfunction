@@ -10,8 +10,7 @@
 	function #p_motion:xyz
 
 # 無敵
-	tag @s add Player.Dodge
-	scoreboard players set @s Dodge.Duration 4
+	function player_manager:invincibility/set {duration:4}
 
 # 演出
 	playsound entity.breeze.wind_burst neutral @a ~ ~ ~ 1 0.9
