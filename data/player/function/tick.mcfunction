@@ -39,6 +39,7 @@
 
 
 # メイン処理
+	function player_manager:invincibility/tick
 	function player:main/tick
 
 

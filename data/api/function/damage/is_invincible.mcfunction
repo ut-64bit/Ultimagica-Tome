@@ -15,6 +15,7 @@
 
 # 取得する
 	execute if entity @s[tag=Player.Dodge] run data modify storage api: out.Invincible set value true
+	execute if entity @s[tag=Player.Invincible] run data modify storage api: out.Invincible set value true
 	execute if entity @s[gamemode=creative] run data modify storage api: out.Invincible set value true
 	execute if entity @s[gamemode=spectator] run data modify storage api: out.Invincible set value true
 

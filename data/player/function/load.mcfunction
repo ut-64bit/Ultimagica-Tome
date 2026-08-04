@@ -27,6 +27,7 @@
 	#> 回避
 	scoreboard objectives add Dodge.Duration dummy
 	scoreboard objectives add Dodge.CoolTime dummy
+	scoreboard objectives add InvincibleTime dummy
 
 	#> ガード
 	scoreboard objectives add GuardTime dummy
