@@ -32,6 +32,8 @@
 	data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.StateMachine set value {current:"idle",time:0,state_data:{}}
 	data modify storage player:context this.StateMachine set value {current:"idle",time:0,state_data:{}}
 	data remove storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Attack
+	data remove storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.ActionBlock
+	data remove storage player:context this.ActionBlock
 	attribute @s movement_speed modifier remove player:attack
 	attribute @s movement_speed modifier remove player:charge
 	attribute @s movement_speed modifier remove player:cooltime

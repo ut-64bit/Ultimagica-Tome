@@ -18,9 +18,6 @@
 	function player_manager:fsm/request_with with storage player:temp request_with
 	data remove storage player:temp request_with
 
-	# 攻撃中の行動を制限する
-	function player_manager:attack/block_actions
-
 # コンボが切れる時間
 	scoreboard players set @s ComboTimer 4
 
