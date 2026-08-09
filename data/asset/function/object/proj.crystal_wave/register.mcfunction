@@ -17,5 +17,3 @@
 	data modify storage asset:object Field.Speed set value 12
 	# 1ステップあたりの移動距離
 	data modify storage asset:object Field.MovePerStep set value 0.25
-	# Delay
-	data modify storage asset:object Field.Delay set value 4
