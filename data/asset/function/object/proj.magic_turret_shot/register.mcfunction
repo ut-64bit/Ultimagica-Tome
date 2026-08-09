@@ -12,7 +12,7 @@
 	data modify storage asset:object ID set value "proj.magic_turret_shot"
 # フィールド
 	# 飛距離
-	data modify storage asset:object Field.Range set value 80
+	data modify storage asset:object Field.Range set value 48
 	# 移動速度
 	data modify storage asset:object Field.Speed set value 12
 	# 1ステップあたりの移動距離
