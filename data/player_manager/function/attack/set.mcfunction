@@ -16,6 +16,7 @@
 	data modify storage player:temp request_with.data.IsHoldable set from storage asset:attack IsHoldable
 	data modify storage player:temp request_with.data.Field set from storage asset:attack Field
 	function player_manager:fsm/request_with with storage player:temp request_with
+	function player_manager:attack/block_pending_actions
 	data remove storage player:temp request_with
 
 # コンボが切れる時間

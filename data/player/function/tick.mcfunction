@@ -41,6 +41,7 @@
 # メイン処理
 	function player_manager:invincibility/tick
 	function player:main/tick
+	function player_manager:attack/unblock_pending_actions
 
 
 # OhMyDatにデータを戻す
