@@ -3,14 +3,11 @@
 # 毎tick呼び出されるメソッド
 #
 
-function asset:object/super.tick
+function asset:object/interface.attackable/get_owner
 
-# 発射者を取得する
-	function asset:object/interface.attackable/get_owner
+data modify storage asset:temp StateCpy set from storage asset:context this.State
+execute if data storage asset:temp {StateCpy:"delay"} run function asset:object/proj.thunder_strike/tick/state_delay/
+execute if data storage asset:temp {StateCpy:"idle"} run function asset:object/proj.thunder_strike/tick/state_idle/
+data remove storage asset:temp StateCpy
 
-execute if score @s General.Tick matches 1 run particle firework ~ ~0.1 ~ 0 0 0 0.2 10 normal
-execute if score @s General.Tick matches 1 run function asset:object/proj.thunder_strike/tick/give_damage
-
-
-# あとしまつ
-	execute as @n[tag=_owner,distance=..1000] run tag @s remove _owner
+execute as @n[tag=_owner,distance=..1000] run tag @s remove _owner

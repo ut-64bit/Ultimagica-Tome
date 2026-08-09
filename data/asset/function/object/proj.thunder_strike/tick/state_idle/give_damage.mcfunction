@@ -1,4 +1,4 @@
-#> asset:object/proj.thunder_strike/tick/give_damage
+#> asset:object/proj.thunder_strike/tick/state_idle/give_damage
 #
 
 # ダメージを与える

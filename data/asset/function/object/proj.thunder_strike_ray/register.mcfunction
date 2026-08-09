@@ -12,8 +12,8 @@
 	data modify storage asset:object ID set value "proj.thunder_strike_ray"
 # フィールド
 	# 飛距離
-	data modify storage asset:object Field.Range set value 100
+	data modify storage asset:object Field.Range set value 50
 	# 移動速度
-	data modify storage asset:object Field.Speed set value 20
+	data modify storage asset:object Field.Speed set value 50
 	# 1ステップあたりの移動距離
-	data modify storage asset:object Field.MovePerStep set value 0.25
+	data modify storage asset:object Field.MovePerStep set value 0.5
