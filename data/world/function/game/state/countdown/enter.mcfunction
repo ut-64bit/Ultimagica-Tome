@@ -18,6 +18,7 @@ execute store result score #Game Game.Timer run data get storage world:game runt
 gamerule pvp false
 function world:game/dispatch/stage/prepare.m with storage world:game runtime
 
+title @a times 0 40 10
 title @a title {"text":"BATTLE ROYALE","color":"gold","bold":true}
 title @a subtitle {"text":"戦闘開始までお待ちください","color":"yellow"}
 
