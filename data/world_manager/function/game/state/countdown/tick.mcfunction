@@ -1,7 +1,7 @@
 #> world_manager:game/state/countdown/tick
 
 # カウントダウン中の参加者を保護する。
-execute as @a[tag=Game.Active] run function player_manager:invincibility/set {duration:2}
+execute as @a[tag=Game.Active] run function api:player/invincibility/set {duration:2}
 
 execute store result score #ActiveCount _ if entity @a[tag=Game.Active]
 execute store result score #MinimumPlayers _ run data get storage world_manager:game runtime.min_players

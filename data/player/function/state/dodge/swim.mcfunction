@@ -1,6 +1,6 @@
 # MP消費
 	data modify storage api: in.Amount set value 10
-	function api:stamina/consume
+	function api:player/stamina/consume
 
 # クールタイム設定
 	scoreboard players set @s Dodge.Duration 10

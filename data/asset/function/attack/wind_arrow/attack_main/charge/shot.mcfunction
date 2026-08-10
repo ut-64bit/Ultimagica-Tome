@@ -8,7 +8,7 @@
 
 # MP消費
 	data modify storage api: in.Amount set value 8
-	function api:stamina/consume
+	function api:player/stamina/consume
 
 # 演出
 	playsound ut_magic:arrow_release player @a ~ ~ ~ 0.6 0.9

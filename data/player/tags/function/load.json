@@ -1,5 +1,5 @@
 {
 	"values": [
-		"player:load"
+		"player_manager:load"
 	]
 }

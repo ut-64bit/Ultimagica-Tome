@@ -10,7 +10,7 @@
 	function #p_motion:xyz
 
 # 無敵
-	function player_manager:invincibility/set {duration:6}
+	function api:player/invincibility/set {duration:6}
 
 # 演出
 	playsound entity.breeze.jump neutral @a ~ ~ ~ 1 0.8
@@ -21,4 +21,4 @@
 
 # MP消費
 	data modify storage api: in.Amount set value 5
-	function api:stamina/consume
+	function api:player/stamina/consume

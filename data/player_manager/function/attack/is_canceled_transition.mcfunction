@@ -3,7 +3,7 @@
 # FSM内部の遷移情報から、攻撃がキャンセルされたか判定する
 #
 
-# api:attack/cancelによる明示的なキャンセル
+# player_manager:attack/cancelによる明示的なキャンセル
 execute if data storage player:context this.StateMachine.state_data{Canceled:true} run return 1
 
 # 攻撃状態間の正常な遷移

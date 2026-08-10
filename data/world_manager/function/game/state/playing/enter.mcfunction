@@ -13,8 +13,7 @@ tag @a remove Game.Ready
 
 scoreboard players set @a[tag=Game.Active] Game.Deaths 0
 
-scoreboard players set @a[tag=Game.Active] InvincibleTime 0
-tag @a[tag=Game.Active] remove Player.Invincible
+execute as @a[tag=Game.Active] run function api:player/invincibility/clear
 gamemode adventure @a[tag=Game.Active]
 gamerule pvp true
 

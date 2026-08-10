@@ -35,7 +35,7 @@
 
 	# マクロで使うために形を整える
 		execute store result storage player:temp Point int 1 run scoreboard players get #t_StaminaDisplay _
-		execute store result storage player:temp Level int 1 run function api:stamina/get_current
+		execute store result storage player:temp Level int 1 run function api:player/stamina/get_current
 
 	# スタミナをXPバーに表示する
 		function player:actionbar/set_xp.m with storage player:temp

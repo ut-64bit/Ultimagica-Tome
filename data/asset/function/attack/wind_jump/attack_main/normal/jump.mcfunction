@@ -10,7 +10,7 @@
 	function #p_motion:xyz
 
 # 無敵
-	function player_manager:invincibility/set {duration:4}
+	function api:player/invincibility/set {duration:4}
 
 # 演出
 	playsound entity.breeze.wind_burst neutral @a ~ ~ ~ 1 0.9

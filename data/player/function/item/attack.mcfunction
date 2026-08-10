@@ -14,7 +14,7 @@
 	data modify storage api: in.ID set from storage player:item CurItem.components."minecraft:custom_data".AttackID
 
 # スタミナを消費する
-	execute unless function api:attack/require_stamina run return fail
+	execute unless function player_manager:attack/require_stamina run return fail
 
 # 攻撃を開始する
 	function player_manager:attack/set with storage api: in

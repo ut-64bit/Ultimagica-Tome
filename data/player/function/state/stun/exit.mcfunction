@@ -9,7 +9,7 @@
 
 # GPを回復する
 	data modify storage api: in set value {Amount:9999}
-	function api:guard_power/recover
+	function api:player/guard_power/recover
 
 # 演出
 	playsound block.anvil.land player @a ~ ~ ~ 0.6 2.0
