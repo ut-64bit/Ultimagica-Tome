@@ -10,8 +10,7 @@
 	#> グローバル変数
 	scoreboard objectives add Global dummy
 
+	scoreboard objectives add EntityID dummy
+
 # 定数を定義する
 	function lib:_system/const
-
-# その他のload処理
-	function #lib:load
