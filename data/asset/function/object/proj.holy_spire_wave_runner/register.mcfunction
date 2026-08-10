@@ -18,5 +18,5 @@
 	# 攻撃を設置する間隔
 	data modify storage asset:object Field.PlaceInterval set value 5
 	# 追従できる上下距離（ブロック単位、0.25刻み）
-	data modify storage asset:object Field.MaxRiseDistance set value 1
+	data modify storage asset:object Field.MaxRiseDistance set value 3
 	data modify storage asset:object Field.MaxDropDistance set value 3
