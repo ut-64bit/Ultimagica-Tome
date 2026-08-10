@@ -11,7 +11,8 @@
 	execute unless data storage player:context this.StateMachine{current:"stun"} if score @s GuardPower matches 0 unless data storage player:context this.ActionBlock[{action:"stun"}] run function player:main/stun
 # ジャンプ
 	execute if predicate lib:input/sneak unless data storage player:context this.ActionBlock[{action:"jump"}] run attribute @s jump_strength base set 0.67
-	execute unless predicate lib:input/sneak unless data storage player:context this.ActionBlock[{action:"jump"}] run attribute @s jump_strength base set 0
+	execute unless predicate lib:input/sneak run attribute @s jump_strength base set 0
+	execute if data storage player:context this.ActionBlock[{action:"jump"}] run attribute @s jump_strength base set 0
 # ガード
 	execute unless data storage player:context this.StateMachine{current:"guard"} if predicate lib:input/sneak if predicate lib:flag/on_ground unless data storage player:context this.ActionBlock[{action:"guard"}] run function player_manager:fsm/request {state:"guard"}
 # 回避
