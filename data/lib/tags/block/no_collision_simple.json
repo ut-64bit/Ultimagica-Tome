@@ -4,6 +4,6 @@
 		"#lib:no_collision",
 		"#slabs",
 		"#doors",
-		"campfire"
+		"#campfires"
 	]
 }

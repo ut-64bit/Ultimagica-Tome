@@ -7,7 +7,7 @@
       "predicate": {
         "location": {
           "block": {
-            "blocks": "campfire"
+            "blocks": "#campfires"
           }
         },
         "distance": {
