@@ -16,5 +16,10 @@
 # 消費スタミナ
 	data modify storage asset:attack RequireStamina set value 8
 
+# コンボ
+	# attack_mainの正常終了後、Window tick以内の同じ入力を別のAttackIDへ差し替える
+	# Windowを省略した場合は4tick
+	# data modify storage asset:attack Combo set value {NextAttackID:"0000.example.next",Window:4}
+
 # フィールド
 	# data modify storage asset:attack Field.Value set value
