@@ -13,6 +13,6 @@ tp @s ~ ~ ~ ~ 0
 
 # left_rotationを初期化する
 	data modify storage asset:temp left_rotation set value { axis:[0,0,1], angle:0 }
-	execute store result storage asset:temp left_rotation.angle float 0.01 run random value -30..30
+	execute store result storage asset:temp left_rotation.angle float 0.3 run random value -1..1
 	data modify entity @s transformation.left_rotation set from storage asset:temp left_rotation
 	data remove storage asset:temp left_rotation

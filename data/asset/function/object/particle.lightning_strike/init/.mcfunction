@@ -1,4 +1,4 @@
-#> asset:object/particle.thunder_spire_spark/init/
+#> asset:object/particle.lightning_strike/init/
 #
 # 初期化処理
 #

@@ -21,8 +21,8 @@
 
 # こいつ...動くぞ！
 	$execute if entity @s[tag=!KillFlag] unless data storage asset:context {StopMove:true} at @s run tp @s ^ ^ ^$(MovePerStep) ~ ~
-	data remove storage asset:context StopMove
 
 # 再帰
 	execute store result storage asset:temp MoveCount int 0.9999999999 run data get storage asset:temp MoveCount
 	execute if entity @s[tag=!KillFlag] unless data storage asset:context {StopMove:true} unless data storage asset:context this{RemainingRange:0} unless data storage asset:temp {MoveCount:0} at @s run function asset:object/abstract.projectile/tick/rec.m with storage asset:context this
+	data remove storage asset:context StopMove

@@ -24,8 +24,9 @@
 	execute if data storage asset:context this{RemainingRange:0} run function asset:object/call.m {method:"range_over"}
 
 # 再帰
-	$execute unless entity @s[distance=..$(MovePerStep)] if entity @s[tag=!KillFlag] unless data storage asset:context this{RemainingRange:0} positioned ^ ^ ^$(MovePerStep) run return run function asset:object/abstract.physical_projectile/tick/rec.m with storage asset:context this
-	$execute if entity @s[distance=0.01..$(MovePerStep)] if entity @s[tag=!KillFlag] unless data storage asset:context this{RemainingRange:0} positioned as @s run return run function asset:object/abstract.physical_projectile/tick/rec.m with storage asset:context this
+	$execute unless entity @s[distance=..$(MovePerStep)] unless data storage asset:context {StopMove:true} if entity @s[tag=!KillFlag] unless data storage asset:context this{RemainingRange:0} positioned ^ ^ ^$(MovePerStep) run return run function asset:object/abstract.physical_projectile/tick/rec.m with storage asset:context this
+	$execute if entity @s[distance=0.01..$(MovePerStep)] unless data storage asset:context {StopMove:true} if entity @s[tag=!KillFlag] unless data storage asset:context this{RemainingRange:0} positioned as @s run return run function asset:object/abstract.physical_projectile/tick/rec.m with storage asset:context this
+	data remove storage asset:context StopMove
 
 # 再帰が終わったら移動する
 	tp @s ~ ~ ~ ~ ~
