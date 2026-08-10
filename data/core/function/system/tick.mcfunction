@@ -3,6 +3,9 @@
 #
 #
 
+# 落ちているアイテムはキルする
+	execute as @e[type=item] run kill @s
+
 # プレイヤーのtick
 	execute as @a at @s run function player:tick
 
@@ -14,3 +17,6 @@
 
 # ダメージ
 	function core:received_damage/update
+
+# ゲームシステム
+	function world_manager:game/tick
