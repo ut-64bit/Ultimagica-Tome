@@ -40,3 +40,6 @@ execute unless data storage player:context this.StateMachine.state_data.AttackID
 
 # UIの処理
 	function player:actionbar/tick
+
+# クイックメニュー
+	execute if entity @s[gamemode=!spectator] run function player:menu/tick
