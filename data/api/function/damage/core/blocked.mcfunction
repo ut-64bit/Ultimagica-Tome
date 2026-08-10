@@ -3,7 +3,7 @@
 
 # GPを減らす
 	data modify storage api: in.Amount set from storage api:temp DamageInfo.Damage
-	function api:guard_power/consume
+	function api:player/guard_power/consume
 
 # 演出
 	playsound item.shield.block player @a[tag=!_owner] ~ ~ ~ 1 1

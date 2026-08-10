@@ -1,4 +1,4 @@
-#> api:attack/core/get_data.m
+#> player_manager:attack/get_data.m
 #
 
 $function asset:attack/$(ID)/register

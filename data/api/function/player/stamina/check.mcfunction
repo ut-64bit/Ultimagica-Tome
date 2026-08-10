@@ -1,4 +1,4 @@
-#> api:stamina/check
+#> api:player/stamina/check
 #
 # スタミナが閾値を越えているか調べる
 #
@@ -13,6 +13,7 @@
 # @api
 
 # validate
+	execute unless entity @s[type=player] run return fail
 	execute unless data storage api: in.Amount run return fail
 
 # リセット

@@ -1,11 +1,13 @@
-#> api:guard_power/get_current
+#> api:player/guard_power/get_current
 #
-# スタミナの整数部分を取得する
+# ガード力の整数部分を取得する
 #
 # @output
 #	score $GuardPower _
 #
 # @api
+
+execute unless entity @s[type=player] run return fail
 
 # リセット
 	scoreboard players reset $GuardPower _

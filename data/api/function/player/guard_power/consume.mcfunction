@@ -1,6 +1,6 @@
-#> api:guard_power/recover
+#> api:player/guard_power/consume
 #
-# スタミナを消費する
+# ガード力を消費する
 #
 # @input
 #	storage api: in.Amount
@@ -9,6 +9,7 @@
 # @api
 
 # validate
+	execute unless entity @s[type=player] run return fail
 	execute unless data storage api: in.Amount run return fail
 
 # 消費量を計算する

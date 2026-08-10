@@ -35,5 +35,4 @@
 	attribute @s movement_speed modifier remove player:cooltime
 	attribute @s movement_speed modifier remove player:hold
 	attribute @s movement_speed modifier remove player:stagger
-	scoreboard players set @s InvincibleTime 0
-	tag @s remove Player.Invincible
+	function player_manager:invincibility/clear

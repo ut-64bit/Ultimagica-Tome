@@ -1,11 +1,13 @@
-#> api:guard_power/get_max
+#> api:player/guard_power/get_max
 #
-# 最大スタミナの整数部分を取得する
+# 最大ガード力の整数部分を取得する
 #
 # @output
 #	score $MaxGuardPower _
 #
 # @api
+
+execute unless entity @s[type=player] run return fail
 
 # リセット
 	scoreboard players reset $MaxGuardPower _

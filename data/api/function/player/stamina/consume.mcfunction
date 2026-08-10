@@ -1,4 +1,4 @@
-#> api:stamina/recover
+#> api:player/stamina/consume
 #
 # スタミナを消費する
 #
@@ -9,6 +9,7 @@
 # @api
 
 # validate
+	execute unless entity @s[type=player] run return fail
 	execute unless data storage api: in.Amount run return fail
 
 # 消費量を計算する

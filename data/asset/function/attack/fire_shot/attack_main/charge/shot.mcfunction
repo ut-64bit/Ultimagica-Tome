@@ -10,4 +10,4 @@
 
 # MP消費
 	data modify storage api: in.Amount set value 3
-	function api:stamina/consume
+	function api:player/stamina/consume

@@ -3,8 +3,8 @@
 
 # MP消費
 	data modify storage api: in.Amount set value 6
-	execute unless function api:stamina/check run return fail
-	function api:stamina/consume
+	execute unless function api:player/stamina/check run return fail
+	function api:player/stamina/consume
 
 # 繰り返す
-	scoreboard players set @s AttackTime 0
+	function player_manager:attack/reset_time

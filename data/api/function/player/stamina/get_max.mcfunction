@@ -1,4 +1,4 @@
-#> api:stamina/get_max
+#> api:player/stamina/get_max
 #
 # 最大スタミナの整数部分を取得する
 #
@@ -6,6 +6,8 @@
 #	score $MaxStamina _
 #
 # @api
+
+execute unless entity @s[type=player] run return fail
 
 # リセット
 	scoreboard players reset $MaxStamina _

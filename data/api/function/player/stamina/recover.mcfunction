@@ -1,4 +1,4 @@
-#> api:guard_power/recover
+#> api:player/stamina/recover
 #
 # スタミナを回復する
 #
@@ -9,14 +9,15 @@
 # @api
 
 # validate
+	execute unless entity @s[type=player] run return fail
 	execute unless data storage api: in.Amount run return fail
 
 # 回復量を計算する
 	execute store result score #t_Amount _ run data get storage api: in.Amount 1000
 
 # 最大値を越えないようにしつつ回復する
-	scoreboard players operation @s GuardPower += #t_Amount _
-	scoreboard players operation @s GuardPower < @s MaxGuardPower
+	scoreboard players operation @s Stamina += #t_Amount _
+	scoreboard players operation @s Stamina < @s MaxStamina
 
 # あとしまつ
 	scoreboard players reset #t_Amount _

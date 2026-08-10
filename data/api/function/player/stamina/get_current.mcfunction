@@ -1,4 +1,4 @@
-#> api:stamina/get_current
+#> api:player/stamina/get_current
 #
 # スタミナの整数部分を取得する
 #
@@ -6,6 +6,8 @@
 #	score $Stamina _
 #
 # @api
+
+execute unless entity @s[type=player] run return fail
 
 # リセット
 	scoreboard players reset $Stamina _
