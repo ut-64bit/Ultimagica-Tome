@@ -32,4 +32,4 @@
 	function player:load
 
 # ゲームシステムのload処理
-	function world:game/load
+	function world_manager:game/load

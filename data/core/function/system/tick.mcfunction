@@ -19,4 +19,4 @@
 	function core:received_damage/update
 
 # ゲームシステム
-	function world:game/tick
+	function world_manager:game/tick
