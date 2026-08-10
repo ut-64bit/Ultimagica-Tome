@@ -3,15 +3,10 @@
 # 初期化時に呼び出されるメソッド
 #
 
+function asset:object/super.init
+
 # 水平方向へ固定する
-	execute at @s run tp @s ~ ~ ~ ~ 0
-
-# 所有者と対象を記録する
-	function asset:object/abstract.projectile/init/set_owner
-	function asset:object/abstract.projectile/init/set_target
-
-# 残りの移動回数を初期化する
-	data modify storage asset:context this.RemainingRange set from storage asset:context this.Range
+	execute align y run tp @s ~ ~ ~ ~ 0
 
 # 召喚位置を地表へ合わせる
 	execute at @s run function asset:object/abstract.ground_wave_runner/surface/find

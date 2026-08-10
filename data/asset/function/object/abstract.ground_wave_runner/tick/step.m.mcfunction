@@ -15,7 +15,7 @@
 	data remove storage asset:context GroundSurfaceFound
 
 # このtickの残り移動回数を減らす
-	execute store result storage asset:temp GroundWaveMoveCount int 0.9999999999 run data get storage asset:temp GroundWaveMoveCount
+	execute store result storage asset:temp MoveCount int 0.9999999999 run data get storage asset:temp MoveCount
 
 # 次のステップへ進む
-	$execute if entity @s[tag=!KillFlag] unless data storage asset:context this{RemainingRange:0} unless data storage asset:temp {GroundWaveMoveCount:0} at @s run function asset:object/abstract.ground_wave_runner/tick/step.m with storage asset:context this
+	execute if entity @s[tag=!KillFlag] unless data storage asset:context this{RemainingRange:0} unless data storage asset:temp {MoveCount:0} at @s run function asset:object/abstract.ground_wave_runner/tick/step.m with storage asset:context this
