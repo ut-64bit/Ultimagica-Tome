@@ -2,6 +2,7 @@
 
 # 選択中のルールとステージを、この試合用に固定する。
 data modify storage world_manager:game runtime set from storage world_manager:game config
+data remove storage world_manager:game auto_start_pending
 
 tag @a remove Game.Participant
 tag @a remove Game.Active
