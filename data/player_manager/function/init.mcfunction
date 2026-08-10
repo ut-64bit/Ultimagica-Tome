@@ -35,4 +35,5 @@
 	attribute @s movement_speed modifier remove player:cooltime
 	attribute @s movement_speed modifier remove player:hold
 	attribute @s movement_speed modifier remove player:stagger
+	function player_manager:attack/combo/clear
 	function player_manager:invincibility/clear

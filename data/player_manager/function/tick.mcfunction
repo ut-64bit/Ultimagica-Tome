@@ -38,6 +38,7 @@
 	execute if score @s PlayTracker.Respawn matches 1 run function player_manager:lifecycle/respawn
 
 # メイン処理
+	function player_manager:attack/combo/tick
 	function player_manager:invincibility/tick
 	function player:main/tick
 	function player_manager:attack/unblock_pending_actions
