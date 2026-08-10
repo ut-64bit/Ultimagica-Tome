@@ -5,6 +5,6 @@
 		}
 	},
 	"rewards": {
-		"function": "player:handler/first_join"
+		"function": "player_manager:handler/first_join"
 	}
 }

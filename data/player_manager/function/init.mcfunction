@@ -1,4 +1,4 @@
-#> player:init
+#> player_manager:init
 #
 
 # スタミナ初期化
@@ -28,11 +28,7 @@
 	effect give @s saturation infinite 0 true
 
 # 攻撃初期化
-	function oh_my_dat:please
-	data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.StateMachine set value {current:"idle",time:0,state_data:{}}
 	data modify storage player:context this.StateMachine set value {current:"idle",time:0,state_data:{}}
-	data remove storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Attack
-	data remove storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.ActionBlock
 	data remove storage player:context this.ActionBlock
 	attribute @s movement_speed modifier remove player:attack
 	attribute @s movement_speed modifier remove player:charge

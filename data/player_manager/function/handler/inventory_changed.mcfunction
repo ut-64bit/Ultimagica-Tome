@@ -1,4 +1,4 @@
-#> player:handler/inventory_changed
+#> player_manager:handler/inventory_changed
 #
 # インベントリ更新時に実行される関数
 #

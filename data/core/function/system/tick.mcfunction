@@ -7,7 +7,7 @@
 	execute as @e[type=item] run kill @s
 
 # プレイヤーのtick
-	execute as @a at @s run function player:tick
+	execute as @a at @s run function player_manager:tick
 
 # Objectのtick
 	execute as @e[tag=AssetObject] at @s run function asset_manager:object/trigger/tick

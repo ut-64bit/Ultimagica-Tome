@@ -29,7 +29,6 @@
 
 # プレイヤーのload処理
 	function player_manager:load
-	function player:load
 
 # ゲームシステムのload処理
 	function world_manager:game/load

@@ -1,4 +1,4 @@
-#> player:handler/using_item
+#> player_manager:handler/using_item
 #
 # アイテム使用時に実行される関数
 #

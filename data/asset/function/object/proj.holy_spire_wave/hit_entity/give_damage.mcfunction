@@ -11,4 +11,4 @@ function api:damage/give_damage
 
 # 怯む
 	function api:player/stagger {duration:6}
-	scoreboard players set @s ComboTimer 0
+	function api:player/attack/reset_combo

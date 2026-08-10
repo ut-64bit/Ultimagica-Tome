@@ -1,4 +1,4 @@
-#> player:tick
+#> player_manager:tick
 #
 
 # 識別用のタグを付与
@@ -9,7 +9,7 @@
 	data modify storage player:context this set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player
 
 # アイテム使用時の処理
-	execute if entity @s[advancements={player:handler/using_item=true}] run function player:handler/using_item
+	execute if entity @s[advancements={player:handler/using_item=true}] run function player_manager:handler/using_item
 	execute if entity @s[tag= UsingItem] run scoreboard players add @s UsingTime 1
 	execute if entity @s[tag=!UsingItem] run scoreboard players set @s UsingTime 0
 
@@ -32,17 +32,15 @@
 # 落下距離
 	execute unless predicate lib:flag/on_ground if score @s PlayTracker.FallDistance matches 1.. run scoreboard players set @s PlayTracker.FallDistance 0
 
-# 2回目以降のワールドに入ったときの処理
-	execute if score @s PlayTracker.Rejoin matches 1 run function player:main/rejoin
+# 2回目以降のワールド参加
+	execute if score @s PlayTracker.Rejoin matches 1 run function player_manager:lifecycle/rejoin
 # リスポーン
-	execute if score @s PlayTracker.Respawn matches 1 run function player:main/respawn
-
+	execute if score @s PlayTracker.Respawn matches 1 run function player_manager:lifecycle/respawn
 
 # メイン処理
 	function player_manager:invincibility/tick
 	function player:main/tick
 	function player_manager:attack/unblock_pending_actions
-
 
 # OhMyDatにデータを戻す
 	function oh_my_dat:please
