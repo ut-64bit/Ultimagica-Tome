@@ -15,7 +15,6 @@
 	data remove storage asset:attack ID
 	data remove storage asset:attack ChargeTime
 	data remove storage asset:attack IsHoldable
-	data remove storage asset:attack ComboTime
 	data remove storage asset:attack RequireStamina
 	data remove storage asset:attack Field
 

@@ -23,8 +23,6 @@
 	scoreboard objectives add ChargeTime dummy
 	scoreboard objectives add AttackTime dummy
 	scoreboard objectives add HoldTime dummy
-	scoreboard objectives add ComboCount dummy
-	scoreboard objectives add ComboTimer dummy
 	scoreboard objectives add AttackTimer dummy
 
 	#> 回避
