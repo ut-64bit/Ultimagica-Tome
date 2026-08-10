@@ -19,3 +19,7 @@
 	data modify storage asset:object Field.MovePerStep set value 0.25
 	# 攻撃を設置する間隔
 	data modify storage asset:object Field.PlaceInterval set value 1
+	# 追従できる最大上昇距離（ブロック単位、0.25刻み）
+	data modify storage asset:object Field.MaxRiseDistance set value 1
+	# 追従できる最大下降距離（ブロック単位、0.25刻み）
+	data modify storage asset:object Field.MaxDropDistance set value 3
