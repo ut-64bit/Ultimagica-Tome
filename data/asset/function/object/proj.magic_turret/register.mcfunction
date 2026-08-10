@@ -12,3 +12,5 @@
 	data modify storage asset:object ID set value "proj.magic_turret"
 # フィールド
 	data modify storage asset:object Field.Duration set value 90
+	# Delay
+	data modify storage asset:object Field.Delay set value 6

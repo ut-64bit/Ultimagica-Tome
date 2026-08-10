@@ -1,4 +1,4 @@
-#> asset:object/proj.magic_turret/tick/shot
+#> asset:object/proj.magic_turret/tick/state_idle/shot
 #
 
 # 発射する
