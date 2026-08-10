@@ -20,6 +20,7 @@ execute unless score #Game Game.Timer matches 0.. run scoreboard players set #Ga
 execute unless data storage world_manager:game config.rule run data modify storage world_manager:game config.rule set value "battle_royale"
 execute unless data storage world_manager:game config.stage run data modify storage world_manager:game config.stage set value "none"
 execute unless data storage world_manager:game config.min_players run data modify storage world_manager:game config.min_players set value 2
+execute unless data storage world_manager:game config.auto_start_ticks run data modify storage world_manager:game config.auto_start_ticks set value 60
 execute unless data storage world_manager:game config.countdown_ticks run data modify storage world_manager:game config.countdown_ticks set value 100
 execute unless data storage world_manager:game config.end_ticks run data modify storage world_manager:game config.end_ticks set value 100
 
