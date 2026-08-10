@@ -3,9 +3,6 @@
 #
 #
 
-# 落ちているアイテムはキルする
-	execute as @e[type=item] run kill @s
-
 # プレイヤーのtick
 	execute as @a at @s run function player_manager:tick
 
@@ -20,3 +17,6 @@
 
 # ゲームシステム
 	function world_manager:game/tick
+
+# メニュー用のアイテムが落ちていたらキルする
+	execute as @e[type=item] if data entity @s Item.components."minecraft:custom_data".menu run kill @s
