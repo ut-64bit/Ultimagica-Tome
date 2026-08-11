@@ -1,5 +1,6 @@
 #> world_manager:game/player/prepare
 #
+
 # プレイヤーを初期化する。
 function api:player/init
 
