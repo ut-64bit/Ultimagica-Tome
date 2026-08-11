@@ -21,6 +21,7 @@ tag @a remove Game.TempSpectator
 
 execute as @e[tag=AssetObject] run function api:common/auto_kill
 gamemode adventure @a
+clear @a
 gamerule pvp false
 
 data remove storage world_manager:game runtime
