@@ -14,18 +14,19 @@
 	data modify storage player:temp request_with.data.AttackID set from storage asset:attack ID
 	data modify storage player:temp request_with.data.ChargeTime set from storage asset:attack ChargeTime
 	data modify storage player:temp request_with.data.IsHoldable set from storage asset:attack IsHoldable
+	data modify storage player:temp request_with.data.ComboInputAttackID set from storage asset:attack ID
+	data modify storage player:temp request_with.data.ComboInputAttackID set from storage api: in.ComboInputAttackID
+	data modify storage player:temp request_with.data.Combo set from storage asset:attack Combo
 	data modify storage player:temp request_with.data.Field set from storage asset:attack Field
 	function player_manager:fsm/request_with with storage player:temp request_with
+	function player_manager:attack/combo/clear
 	function player_manager:attack/block_pending_actions
 	data remove storage player:temp request_with
-
-# コンボが切れる時間
-	scoreboard players set @s ComboTimer 4
 
 	data remove storage asset:attack ID
 	data remove storage asset:attack ChargeTime
 	data remove storage asset:attack IsHoldable
-	data remove storage asset:attack ComboTime
+	data remove storage asset:attack Combo
 	data remove storage asset:attack RequireStamina
 	data remove storage asset:attack Field
 

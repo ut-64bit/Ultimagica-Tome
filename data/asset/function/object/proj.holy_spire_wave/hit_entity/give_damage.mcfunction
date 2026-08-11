@@ -11,4 +11,3 @@ function api:damage/give_damage
 
 # 怯む
 	function api:player/stagger {duration:6}
-	function api:player/attack/reset_combo

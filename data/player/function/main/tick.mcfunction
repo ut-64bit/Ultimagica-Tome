@@ -27,10 +27,6 @@ execute if score @s Dodge.CoolTime matches 1.. run scoreboard players remove @s 
 	execute if score @s GuardPowerRecoverDelay matches 0 store result storage api: in.Amount float 0.001 run scoreboard players get @s GuardPowerRecoverSpeed
 	execute if score @s GuardPowerRecoverDelay matches 0 run function api:player/guard_power/recover
 
-# コンボ
-execute unless data storage player:context this.StateMachine.state_data.AttackID if score @s ComboTimer matches 1.. run scoreboard players remove @s ComboTimer 1
-execute unless data storage player:context this.StateMachine.state_data.AttackID if score @s ComboTimer matches 0 run scoreboard players set @s ComboCount 0
-
 # 先行入力
 	execute if score @s AttackTimer matches 1.. run scoreboard players remove @s AttackTimer 1
 
