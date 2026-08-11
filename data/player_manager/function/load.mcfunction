@@ -4,6 +4,9 @@
 # FSMのload処理
 	function player_manager:fsm/_core/load
 
+# ロードアウトのload処理
+	function player_manager:loadout/load
+
 # スコアボードを宣言する
 	#> 検知するためのスコア
 	scoreboard objectives add PlayTracker.Rejoin custom:leave_game
