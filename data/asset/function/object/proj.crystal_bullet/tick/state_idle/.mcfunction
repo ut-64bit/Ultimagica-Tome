@@ -4,7 +4,7 @@
 scoreboard players add @s General.Tick 1
 
 # エンティティへの衝突
-	execute if score @s General.Tick matches 5.. run function asset:object/call.m {method:"detect_hit_entity"}
+	execute if score @s General.Tick matches 20.. run function asset:object/call.m {method:"detect_hit_entity"}
 	execute if data storage asset:context {IsHitEntity:true} run function asset:object/call.m {method:"hit_entity"}
 	data remove storage asset:context IsHitEntity
 
