@@ -3,7 +3,7 @@
 	function api:player/stamina/consume
 
 # クールタイム設定
-	scoreboard players set @s Dodge.Duration 6
+	scoreboard players set @s Dodge.Duration 7
 	scoreboard players set @s Dodge.CoolTime 12
 
 # 移動する
