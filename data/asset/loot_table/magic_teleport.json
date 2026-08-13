@@ -28,11 +28,7 @@
 							"function": "set_lore",
 							"lore": [
 								{
-									"text": "魔力の弾丸を放つ",
-									"color": "gray"
-								},
-								{
-									"text": "タメ使用で強化され、敵を貫く",
+									"text": "前方に瞬間移動する",
 									"color": "gray"
 								}
 							],
