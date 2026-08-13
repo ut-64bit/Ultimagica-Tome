@@ -2,7 +2,7 @@
 #
 
 # ダメージを与える
-	execute positioned ~-2.5 ~-2.5 ~-2.5 as @e[type=!#lib:no_living,tag=!_owner,tag=!_this,dx=4,dy=4,dz=4] unless function api:damage/is_invincible run tag @s add _hit
+	execute positioned ~-2.5 ~-2.5 ~-2.5 as @e[type=!#lib:no_living,tag=!_owner,tag=!_this,tag=!Game.Observer,dx=4,dy=4,dz=4] unless function api:damage/is_invincible run tag @s add _hit
 
 	execute as @e[tag=_hit,tag=!_ray,distance=..100] facing entity @s feet run function api:ray_cast/entity_ray.m {Range:2.5}
 	execute as @e[tag=_hit,tag=!_ray,distance=..100] facing entity @s eyes run function api:ray_cast/entity_ray.m {Range:2.5}

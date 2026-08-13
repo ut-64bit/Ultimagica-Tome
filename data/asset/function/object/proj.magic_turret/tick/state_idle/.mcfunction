@@ -4,7 +4,7 @@
 scoreboard players add @s General.Tick 1
 
 # ホーミング
-	execute as @n[type=!#lib:no_living,tag=!_owner,tag=!_this,distance=..15] run tag @s add _target
+	execute as @n[type=!#lib:no_living,tag=!_owner,tag=!_this,tag=!Game.Observer,distance=..15] run tag @s add _target
 	execute positioned ^ ^ ^-20 facing entity @n[tag=_target,distance=..1000] eyes run rotate @s ~ ~
 	execute as @n[tag=_target,distance=..1000] run tag @s remove _target
 

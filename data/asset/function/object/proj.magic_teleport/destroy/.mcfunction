@@ -5,6 +5,7 @@
 
 function asset:object/abstract.projectile/tick/get_owner
 
+tp @n[tag=_owner,distance=..1000] ~ ~ ~
 ride @n[tag=_owner,distance=..1000] mount @s
 ride @n[tag=_owner,distance=..1000] dismount
 # execute as @n[tag=_owner,distance=..1000] run function lib:motion/reset
