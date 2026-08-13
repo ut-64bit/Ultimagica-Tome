@@ -12,8 +12,8 @@
 	data modify storage asset:object ID set value "proj.fire_breath"
 # フィールド
 	# 飛距離
-	data modify storage asset:object Field.Range set value 15
+	data modify storage asset:object Field.Range set value 24
 	# 移動速度
-	data modify storage asset:object Field.Speed set value 2
+	data modify storage asset:object Field.Speed set value 3
 	# 1ステップあたりの移動距離
 	data modify storage asset:object Field.MovePerStep set value 0.5
