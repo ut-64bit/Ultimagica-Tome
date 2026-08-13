@@ -17,4 +17,4 @@
 	data modify storage asset:attack RequireStamina set value 8
 
 # フィールド
-	# data modify storage asset:attack Field.Value set value
+	data modify storage asset:attack Field.Repeat set value 3
