@@ -7,7 +7,7 @@
 	data modify storage asset:attack ID set value "thunder_strike"
 
 # チャージ時間
-	data modify storage asset:attack ChargeTime append value 15
+	data modify storage asset:attack ChargeTime append value 10
 
 # チャージ完了後、保持できるか
 	data modify storage asset:attack IsHoldable set value false
