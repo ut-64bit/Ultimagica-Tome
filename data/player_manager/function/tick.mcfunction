@@ -37,6 +37,11 @@
 # リスポーン
 	execute if score @s PlayTracker.Respawn matches 1 run function player_manager:lifecycle/respawn
 
+# クリエ・スペクテイターの判定用のタグ
+	tag @s remove Player.NoCollison
+	execute if entity @s[gamemode=spectator] run tag @s add Player.NoCollison
+	execute if entity @s[gamemode=creative] run tag @s add Player.NoCollison
+
 # メイン処理
 	function player_manager:attack/combo/tick
 	function player_manager:invincibility/tick

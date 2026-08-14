@@ -5,7 +5,7 @@
 
 # ダメージを与える
 	data modify storage api: in.AttackData set from storage asset:context this.AttackData
-	execute positioned ~-1.25 ~-1.5 ~-1.25 as @e[type=!#lib:no_living,tag=!_owner,tag=!_this,tag=!Game.Observer,dx=1.5,dy=2,dz=1.5] unless function api:damage/is_invincible \
+	execute positioned ~-1.25 ~-1.5 ~-1.25 as @e[type=!#lib:no_living,tag=!_owner,tag=!_this,tag=!Game.Observer,tag=!Player.NoCollison,dx=1.5,dy=2,dz=1.5] unless function api:damage/is_invincible \
 		positioned ~1.25 ~1.5 ~1.25 run function asset:object/proj.wind_whirl/hit_entity/give_damage
 
 # 演出

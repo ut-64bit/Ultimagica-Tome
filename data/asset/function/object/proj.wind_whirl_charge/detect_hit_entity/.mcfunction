@@ -4,4 +4,4 @@
 #
 
 # エンティティに当たったかどうか判定する
-	execute positioned ~-1.5 ~-2 ~-1.5 as @e[type=!#lib:no_living,tag=!_owner,tag=!_this,tag=!Game.Observer,dx=2,dy=3,dz=2] unless function api:damage/is_invincible run data modify storage asset:context IsHitEntity set value true
+	execute positioned ~-1.5 ~-2 ~-1.5 as @e[type=!#lib:no_living,tag=!_owner,tag=!_this,tag=!Game.Observer,tag=!Player.NoCollison,dx=2,dy=3,dz=2] unless function api:damage/is_invincible run data modify storage asset:context IsHitEntity set value true

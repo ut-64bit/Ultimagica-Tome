@@ -13,7 +13,7 @@
 
 # ダメージを与えられるか判定する
 	execute unless data storage api:temp DamageInfo{RemainingHitCount:0} run data modify storage api: out.GiveDamage set value true
-	execute if function api:damage/is_invincible run data modify storage api: out.GiveDamage set value false
+	# execute if function api:damage/is_invincible run data modify storage api: out.GiveDamage set value false
 
 # ダメージを与える
 	execute if data storage api: out{GiveDamage:true} run function api:damage/core/set_damage_info.m with storage api:temp
