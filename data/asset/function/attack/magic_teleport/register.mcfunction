@@ -14,7 +14,7 @@
 
 
 # 消費スタミナ
-	data modify storage asset:attack RequireStamina set value 12
+	data modify storage asset:attack RequireStamina set value 25
 
 # フィールド
 	# data modify storage asset:attack Field.Value set value
