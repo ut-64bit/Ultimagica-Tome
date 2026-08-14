@@ -16,4 +16,7 @@ scoreboard players add @s General.Tick 1
 	function lib:interval/ {Tick:6,Offset:0}
 	execute if score $Interval _ matches 0 run function asset:object/atk.water_ray_base/tick/create_attack_data
 
+# 演出
+	execute if score @s General.Tick matches 1 positioned ^ ^ ^1 run function api:object/summon.m {ID:"particle.shock_wave_1"}
+
 execute as @n[tag=_owner,distance=..1000] run tag @s remove _owner
