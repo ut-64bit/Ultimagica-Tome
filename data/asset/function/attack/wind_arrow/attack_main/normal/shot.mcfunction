@@ -6,7 +6,7 @@
 	execute anchored eyes positioned ^-0.2 ^-0.2 ^0.5 run function api:object/summon.m {ID:"proj.wind_arrow"}
 
 # MP消費
-	data modify storage api: in.Amount set value 8
+	data modify storage api: in.Amount set value 3
 	function api:player/stamina/consume
 
 # 演出

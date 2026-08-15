@@ -4,3 +4,4 @@
 #
 
 function asset:item/magic_rod/equip/set_model.m with storage player:context this.Weapon
+item modify entity @s weapon.mainhand {function:"set_custom_data",tag:{Field:{state:"standby"}}}

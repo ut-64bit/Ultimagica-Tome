@@ -5,6 +5,7 @@
 	data modify storage player:item CurItem set value {}
 	data modify storage player:item CurItem set from entity @s SelectedItem
 	data remove storage player:item CurItem.components."minecraft:custom_model_data"
+	data remove storage player:item CurItem.components."minecraft:custom_data".Field
 
 # 1tick前の装備を取得する
 	data modify storage player:item PreItem set from storage player:context this.DataCache.Item
@@ -39,6 +40,7 @@
 	data modify storage player:context this.DataCache.Item set value {}
 	data modify storage player:context this.DataCache.Item set from entity @s SelectedItem
 	data remove storage player:context this.DataCache.Item.components."minecraft:custom_model_data"
+	data remove storage player:context this.DataCache.Item.components."minecraft:custom_data".Field
 
 # あとしまつ
 	data remove storage player:item CurItem
