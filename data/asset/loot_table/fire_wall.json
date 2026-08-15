@@ -1,0 +1,48 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:stick",
+					"functions": [
+						{
+							"function": "reference",
+							"name": "asset:weapon_base"
+						},
+						{
+							"function": "reference",
+							"name": "asset:tooltip/magic/fire"
+						},
+						{
+							"function": "set_name",
+							"name": {
+								"translate": "ut_magic.spell.fire_wall",
+								"color": "white",
+								"italic": false
+							},
+							"target": "custom_name"
+						},
+						{
+							"function": "set_lore",
+							"lore": [
+								{
+									"text": "足元から激しい炎を放つ",
+									"color": "gray"
+								}
+							],
+							"mode": "append"
+						},
+						{
+							"function": "minecraft:set_custom_data",
+							"tag": {
+								"AttackID": "fire_wall"
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
