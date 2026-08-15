@@ -13,6 +13,13 @@
 #	storage api: in.MaxHit
 #		: ?int
 #		最大ヒット数
+#	storage api: in.Element
+#		: ?string
+#		ダメージ属性。physical | magic | light | holy | fire | thunder | wind | water
+#		未設定の場合は physical
+#	storage api: in.Attribute
+#		: ?compound
+#		Unblockable など、ダメージの性質
 #
 # @output
 #	storage api: out.AttackData
@@ -30,7 +37,12 @@
 	data modify storage api: out.AttackData.Damage set from storage api: in.Damage
 	data modify storage api: out.AttackData.ID set from storage api: in.AttackID
 	data modify storage api: out.AttackData.MaxHitCount set from storage api: in.MaxHit
+	data modify storage api: out.AttackData.Element set from storage api: in.Element
 	data modify storage api: out.AttackData.Attribute set from storage api: in.Attribute
+	execute unless data storage api: out.AttackData.Element run data modify storage api: out.AttackData.Element set value "physical"
+
+# 属性を検証する
+	execute unless data storage api: out.AttackData{Element:"physical"} unless data storage api: out.AttackData{Element:"magic"} unless data storage api: out.AttackData{Element:"light"} unless data storage api: out.AttackData{Element:"holy"} unless data storage api: out.AttackData{Element:"fire"} unless data storage api: out.AttackData{Element:"thunder"} unless data storage api: out.AttackData{Element:"wind"} unless data storage api: out.AttackData{Element:"water"} run return run function api:damage/core/invalid_attribute
 
 # AttackIDが未設定なら新しいIDを割り当てる
 	execute unless data storage api: out.AttackData.ID store result storage api: out.AttackData.ID int 1 run function api:damage/core/allocate
