@@ -12,6 +12,6 @@ execute store result score #LoadoutMagicLimit _ run data get storage player_mana
 execute if score #LoadoutMagicCount _ >= #LoadoutMagicLimit _ run return run function player_manager:loadout/magic/error/full
 
 $data modify storage player:context this.Loadout.Magic append value {id:"$(magic)"}
-$tellraw @s [{"text":"[Loadout] ","color":"light_purple"},{"text":"$(magic)","color":"aqua"},{"text":" を選択しました。","color":"green"}]
+$tellraw @s [{"text":"[Loadout] ","color":"light_purple"},{"translate":"ut_magic.spell.$(magic)","color":"aqua"},{"text":" を選択しました。","color":"green"}]
 playsound block.note_block.pling ui @s ~ ~ ~ 1 1.2
 return 1

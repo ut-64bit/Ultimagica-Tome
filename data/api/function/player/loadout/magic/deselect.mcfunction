@@ -6,8 +6,7 @@
 # @api
 
 execute unless entity @s[type=player] run return fail
-execute store result score #LoadoutCanEdit _ run function player_manager:loadout/can_edit
-execute unless score #LoadoutCanEdit _ matches 1 run return fail
+execute unless function player_manager:loadout/can_edit run return fail
 
 function player_manager:common/this/stash
 function oh_my_dat:please
