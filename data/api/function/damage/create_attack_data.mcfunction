@@ -17,6 +17,12 @@
 #		: ?string
 #		ダメージ属性。physical | magic | light | holy | fire | thunder | wind | water
 #		未設定の場合は physical
+#	storage api: in.School
+#		: ?string
+#		魔法系統のID。同じ系統の魔法を対象にする効果で使用する
+#	storage api: in.Tags
+#		: ?list<string>
+#		spear、projectile、areaなど、複数の魔法を横断して分類するタグ
 #	storage api: in.Attribute
 #		: ?compound
 #		Unblockable など、ダメージの性質
@@ -38,8 +44,11 @@
 	data modify storage api: out.AttackData.ID set from storage api: in.AttackID
 	data modify storage api: out.AttackData.MaxHitCount set from storage api: in.MaxHit
 	data modify storage api: out.AttackData.Element set from storage api: in.Element
+	data modify storage api: out.AttackData.School set from storage api: in.School
+	data modify storage api: out.AttackData.Tags set from storage api: in.Tags
 	data modify storage api: out.AttackData.Attribute set from storage api: in.Attribute
 	execute unless data storage api: out.AttackData.Element run data modify storage api: out.AttackData.Element set value "physical"
+	execute unless data storage api: out.AttackData.Tags run data modify storage api: out.AttackData.Tags set value []
 
 # 属性を検証する
 	execute unless data storage api: out.AttackData{Element:"physical"} unless data storage api: out.AttackData{Element:"magic"} unless data storage api: out.AttackData{Element:"light"} unless data storage api: out.AttackData{Element:"holy"} unless data storage api: out.AttackData{Element:"fire"} unless data storage api: out.AttackData{Element:"thunder"} unless data storage api: out.AttackData{Element:"wind"} unless data storage api: out.AttackData{Element:"water"} run return run function api:damage/core/invalid_attribute

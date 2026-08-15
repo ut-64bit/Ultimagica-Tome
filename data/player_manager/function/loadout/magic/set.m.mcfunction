@@ -10,7 +10,7 @@ $execute if data storage player:context this.Loadout.Magic[{id:"$(magic)"}] run 
 $scoreboard players set #LoadoutMagicSlot _ $(slot)
 execute unless score #LoadoutMagicSlot _ matches 1.. run return run function player_manager:loadout/magic/error/slot
 
-execute store result score #LoadoutMagicLimit _ run data get storage player_manager:loadout config.magic_limit
+function player_manager:loadout/magic/get_limit
 execute if score #LoadoutMagicSlot _ > #LoadoutMagicLimit _ run return run function player_manager:loadout/magic/error/slot
 
 execute store result score #LoadoutMagicCount _ run data get storage player:context this.Loadout.Magic

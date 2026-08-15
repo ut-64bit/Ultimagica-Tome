@@ -1,6 +1,9 @@
 #> player_manager:init
 #
 
+# クラス・スキル用能力値の不足分を初期化する。
+	function player_manager:stats/ensure
+
 # スタミナ初期化
 	scoreboard players set @s MaxStamina 100000
 	scoreboard players operation @s Stamina = @s MaxStamina
@@ -22,7 +25,7 @@
 	attribute @s sneaking_speed base set 1
 	attribute @s jump_strength base set 0
 	attribute @s step_height base set 1
-	attribute @s camera_distance base set 0
+	attribute @s camera_distance base reset
 
 # 永続バフ付与
 	effect give @s saturation infinite 0 true

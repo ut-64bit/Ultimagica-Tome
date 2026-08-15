@@ -8,6 +8,26 @@
 	function player_manager:loadout/load
 
 # スコアボードを宣言する
+	#> クラス・スキルから変更する能力値（1000 = 1.0倍）
+	scoreboard objectives add DamageDealt.physical dummy
+	scoreboard objectives add DamageDealt.magic dummy
+	scoreboard objectives add DamageDealt.light dummy
+	scoreboard objectives add DamageDealt.holy dummy
+	scoreboard objectives add DamageDealt.fire dummy
+	scoreboard objectives add DamageDealt.thunder dummy
+	scoreboard objectives add DamageDealt.wind dummy
+	scoreboard objectives add DamageDealt.water dummy
+	scoreboard objectives add DamageTaken.physical dummy
+	scoreboard objectives add DamageTaken.magic dummy
+	scoreboard objectives add DamageTaken.light dummy
+	scoreboard objectives add DamageTaken.holy dummy
+	scoreboard objectives add DamageTaken.fire dummy
+	scoreboard objectives add DamageTaken.thunder dummy
+	scoreboard objectives add DamageTaken.wind dummy
+	scoreboard objectives add DamageTaken.water dummy
+	scoreboard objectives add CastSpeed dummy
+	scoreboard objectives add MagicSlots dummy
+
 	#> 検知するためのスコア
 	scoreboard objectives add PlayTracker.Rejoin custom:leave_game
 	scoreboard objectives add PlayTracker.Respawn custom:time_since_death
@@ -54,3 +74,6 @@
 	scoreboard objectives add InputKey.Backward dummy
 	scoreboard objectives add InputKey.Right dummy
 	scoreboard objectives add InputKey.Left dummy
+
+# リロード時、参加中のプレイヤーに不足している能力値だけを補う。
+execute as @a run function player_manager:stats/ensure

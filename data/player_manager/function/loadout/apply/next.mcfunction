@@ -2,7 +2,6 @@
 
 execute unless data storage player_manager:loadout temp.apply.magic[0] run return 0
 
-execute store result score #LoadoutMagicLimit _ run data get storage player_manager:loadout config.magic_limit
 execute if score #LoadoutMagicSlot _ >= #LoadoutMagicLimit _ run return 0
 
 data modify storage player_manager:loadout temp.apply.current set from storage player_manager:loadout temp.apply.magic[0]

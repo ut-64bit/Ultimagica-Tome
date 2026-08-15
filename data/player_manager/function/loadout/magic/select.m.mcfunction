@@ -8,7 +8,7 @@ $execute unless data storage player_manager:loadout registry.magic[{id:"$(magic)
 $execute if data storage player:context this.Loadout.Magic[{id:"$(magic)"}] run return run function player_manager:loadout/magic/error/duplicate.m {magic:"$(magic)"}
 
 execute store result score #LoadoutMagicCount _ run data get storage player:context this.Loadout.Magic
-execute store result score #LoadoutMagicLimit _ run data get storage player_manager:loadout config.magic_limit
+function player_manager:loadout/magic/get_limit
 execute if score #LoadoutMagicCount _ >= #LoadoutMagicLimit _ run return run function player_manager:loadout/magic/error/full
 
 $data modify storage player:context this.Loadout.Magic append value {id:"$(magic)"}
