@@ -4,6 +4,10 @@
 # リセット
 	data modify storage api: out.GiveDamage set value false
 
+# create_attack_dataを経由しない呼び出しでも属性情報を保証する。
+	execute unless data storage api: in.AttackData.Element run data modify storage api: in.AttackData.Element set value "physical"
+	execute unless data storage api: in.AttackData{Element:"physical"} unless data storage api: in.AttackData{Element:"magic"} unless data storage api: in.AttackData{Element:"light"} unless data storage api: in.AttackData{Element:"holy"} unless data storage api: in.AttackData{Element:"fire"} unless data storage api: in.AttackData{Element:"thunder"} unless data storage api: in.AttackData{Element:"wind"} unless data storage api: in.AttackData{Element:"water"} run return fail
+
 # マクロに必要なデータを取得する
 	data modify storage api:temp ID set from storage api: in.AttackData.ID
 	data modify storage api:temp UUID set from entity @s UUID
