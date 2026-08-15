@@ -34,6 +34,10 @@
 								{
 									"text": "長押している間、それは継続する",
 									"color": "gray"
+								},
+								{
+									"text": "空中で使うこともできる",
+									"color": "gray"
 								}
 							],
 							"mode": "append"
