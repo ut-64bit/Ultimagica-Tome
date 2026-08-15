@@ -11,9 +11,4 @@
 # ID
 	data modify storage asset:object ID set value "proj.crystal_wave"
 # フィールド
-	# 飛距離
-	data modify storage asset:object Field.Range set value 100
-	# 移動速度
-	data modify storage asset:object Field.Speed set value 12
-	# 1ステップあたりの移動距離
-	data modify storage asset:object Field.MovePerStep set value 0.25
+	# data modify storage asset:object Field.Value set value
