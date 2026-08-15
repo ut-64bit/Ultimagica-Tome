@@ -18,7 +18,3 @@
 	particle gust_emitter_small ~ ~1 ~ 0 0 0 0 1 force
 	function api:clear_in
 	function api:object/summon.m {ID:"particle.wind_jump"}
-
-# MP消費
-	data modify storage api: in.Amount set value 5
-	function api:player/stamina/consume
