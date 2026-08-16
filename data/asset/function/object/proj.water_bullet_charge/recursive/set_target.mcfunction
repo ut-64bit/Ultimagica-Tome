@@ -2,7 +2,7 @@
 #
 
 # ターゲット候補に一時タグを付与する
-	execute as @e[type=!#lib:no_living,tag=!_owner,tag=!_this,tag=!Game.Observer,tag=!Player.NoCollison,distance=..15] unless function api:damage/is_invincible run tag @s add _target
+	execute as @e[type=!#lib:no_living,tag=!_owner,tag=!_this,tag=!Game.Observer,tag=!Player.NoCollison,tag=!Untargetable,distance=..15] unless function api:damage/is_invincible run tag @s add _target
 
 # 前方向にいるやつに絞り込む
 	execute as @e[tag=_target,distance=..100] at @s facing entity @n[tag=_this,distance=..100] eyes positioned ^ ^ ^3 rotated as @n[tag=_this,distance=..100] positioned ^ ^ ^4 unless entity @s[distance=..5] run tag @s remove _target

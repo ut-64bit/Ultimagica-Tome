@@ -17,7 +17,7 @@
 		"spawner_minecart",
 		"command_block_minecart",
 		"#impact_projectiles",
-		"#deflects_projectiles",
-		"#redirectable_projectile"
+		"#redirectable_projectile",
+		"interaction"
 	]
 }
