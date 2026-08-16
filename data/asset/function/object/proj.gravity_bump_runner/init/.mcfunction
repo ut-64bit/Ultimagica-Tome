@@ -1,4 +1,4 @@
-#> asset:object/proj.holy_spire_wave_runner/init/
+#> asset:object/proj.gravity_bump_runner/init/
 #
 # 初期化時に呼び出されるメソッド
 #

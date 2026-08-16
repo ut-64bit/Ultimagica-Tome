@@ -12,7 +12,7 @@
 	data modify storage asset:object ID set value "proj.gravity_bump_ray"
 # フィールド
 	# 飛距離
-	data modify storage asset:object Field.Range set value 16
+	data modify storage asset:object Field.Range set value 24
 	# 移動速度
 	data modify storage asset:object Field.Speed set value 16
 	# 1ステップあたりの移動距離
