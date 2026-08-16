@@ -7,8 +7,10 @@
 	tp @s ~ ~ ~ ~ ~
 
 # OwnerIDを設定する
-	execute unless data storage asset:context this.OwnerID store result storage asset:context this.OwnerID int 1 as @n[tag=_this,distance=..1000] run function lib:entity_id/get
-	execute if data storage asset:context this.OwnerID store result score @s OwnerID run data get storage asset:context this.OwnerID
+	function asset:object/abstract.beam/init/set_owner
+
+# TargetIDを設定する
+	function asset:object/abstract.beam/init/set_target
 
 execute on passengers run rotate @s 0.0 0.0
 
