@@ -27,6 +27,8 @@
 	scoreboard objectives add DamageTaken.water dummy
 	scoreboard objectives add CastSpeed dummy
 	scoreboard objectives add MagicSlots dummy
+	scoreboard objectives add SkillCapacity dummy
+	scoreboard objectives add SkillCost dummy
 
 	#> 検知するためのスコア
 	scoreboard objectives add PlayTracker.Rejoin custom:leave_game
