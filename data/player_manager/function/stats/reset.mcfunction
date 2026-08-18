@@ -23,7 +23,10 @@ scoreboard players set @s DamageTaken.water 1000
 
 scoreboard players set @s CastSpeed 1000
 execute store result score @s MagicSlots run data get storage player_manager:loadout config.magic_limit
+scoreboard players set @s SkillCapacity 0
+scoreboard players set @s SkillCost 0
 
 # player:context this が読み込まれている場合、クラス・スキル由来の条件付き倍率も消去する。
 data remove storage player:context this.Stats.DamageDealtModifiers
 data remove storage player:context this.Stats.DamageTakenModifiers
+data modify storage player:context this.ActiveSkills set value []
