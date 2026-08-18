@@ -8,6 +8,7 @@
 	scoreboard players set $z hb.Motion 0
 	function lib:motion/reset
 	function #p_motion:xyz
+	effect give @s slow_falling 3 0 true
 
 # 無敵
 	function api:player/invincibility/set {duration:4}
