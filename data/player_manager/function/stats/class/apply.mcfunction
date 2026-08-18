@@ -22,8 +22,12 @@ execute if data storage player_manager:loadout temp.rebuild.class.stats.damage_t
 
 execute if data storage player_manager:loadout temp.rebuild.class.stats.cast_speed store result score @s CastSpeed run data get storage player_manager:loadout temp.rebuild.class.stats.cast_speed
 execute if data storage player_manager:loadout temp.rebuild.class.stats.magic_slots store result score @s MagicSlots run data get storage player_manager:loadout temp.rebuild.class.stats.magic_slots
+execute if data storage player_manager:loadout temp.rebuild.class.stats.max_mp store result score @s MaxStamina run data get storage player_manager:loadout temp.rebuild.class.stats.max_mp
+execute if data storage player_manager:loadout temp.rebuild.class.stats.max_guard_power store result score @s MaxGuardPower run data get storage player_manager:loadout temp.rebuild.class.stats.max_guard_power
 execute if data storage player_manager:loadout temp.rebuild.class.skill_capacity store result score @s SkillCapacity run data get storage player_manager:loadout temp.rebuild.class.skill_capacity
 
 # 不正な負数は使用不能な0として扱う。
 execute if score @s MagicSlots matches ..-1 run scoreboard players set @s MagicSlots 0
+execute if score @s MaxStamina matches ..-1 run scoreboard players set @s MaxStamina 0
+execute if score @s MaxGuardPower matches ..-1 run scoreboard players set @s MaxGuardPower 0
 execute if score @s SkillCapacity matches ..-1 run scoreboard players set @s SkillCapacity 0

@@ -6,15 +6,18 @@
 
 # スタミナ初期化
 	scoreboard players set @s MaxStamina 100000
-	scoreboard players operation @s Stamina = @s MaxStamina
 	scoreboard players set @s StaminaRecoverDelay 20
 	scoreboard players set @s StaminaRecoverSpeed 1000
 
 # ガード力初期化
 	scoreboard players set @s MaxGuardPower 15000
-	scoreboard players operation @s GuardPower = @s MaxGuardPower
 	scoreboard players set @s GuardPowerRecoverDelay 60
 	scoreboard players set @s GuardPowerRecoverSpeed 200
+
+# クラス・スキルの補正を反映してからMPとガード力を全回復する。
+	function player_manager:stats/rebuild
+	scoreboard players operation @s Stamina = @s MaxStamina
+	scoreboard players operation @s GuardPower = @s MaxGuardPower
 
 # HP初期化
 	attribute @s max_health base set 40

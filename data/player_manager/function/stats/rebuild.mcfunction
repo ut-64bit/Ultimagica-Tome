@@ -7,9 +7,15 @@ function player_manager:loadout/ensure
 function player_manager:stats/reset
 
 data remove storage player_manager:loadout temp.rebuild
+execute if data storage player:context this.Loadout{Class:""} run scoreboard players operation @s Stamina < @s MaxStamina
+execute if data storage player:context this.Loadout{Class:""} run scoreboard players operation @s GuardPower < @s MaxGuardPower
 execute if data storage player:context this.Loadout{Class:""} run return 0
+execute unless data storage player:context this.Loadout.Class run scoreboard players operation @s Stamina < @s MaxStamina
+execute unless data storage player:context this.Loadout.Class run scoreboard players operation @s GuardPower < @s MaxGuardPower
 execute unless data storage player:context this.Loadout.Class run return 0
 
 function player_manager:stats/class/load.m with storage player:context this.Loadout
+scoreboard players operation @s Stamina < @s MaxStamina
+scoreboard players operation @s GuardPower < @s MaxGuardPower
 data remove storage player_manager:loadout temp.rebuild
 return 1

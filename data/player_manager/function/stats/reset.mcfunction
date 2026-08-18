@@ -23,6 +23,8 @@ scoreboard players set @s DamageTaken.water 1000
 
 scoreboard players set @s CastSpeed 1000
 execute store result score @s MagicSlots run data get storage player_manager:loadout config.magic_limit
+scoreboard players set @s MaxStamina 100000
+scoreboard players set @s MaxGuardPower 15000
 scoreboard players set @s SkillCapacity 0
 scoreboard players set @s SkillCost 0
 

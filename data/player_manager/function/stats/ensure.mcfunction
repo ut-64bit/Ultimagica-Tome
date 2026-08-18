@@ -23,5 +23,7 @@ execute unless score @s DamageTaken.water matches -2147483648..2147483647 run sc
 
 execute unless score @s CastSpeed matches -2147483648..2147483647 run scoreboard players set @s CastSpeed 1000
 execute unless score @s MagicSlots matches -2147483648..2147483647 store result score @s MagicSlots run data get storage player_manager:loadout config.magic_limit
+execute unless score @s MaxStamina matches -2147483648..2147483647 run scoreboard players set @s MaxStamina 100000
+execute unless score @s MaxGuardPower matches -2147483648..2147483647 run scoreboard players set @s MaxGuardPower 15000
 execute unless score @s SkillCapacity matches -2147483648..2147483647 run scoreboard players set @s SkillCapacity 0
 execute unless score @s SkillCost matches -2147483648..2147483647 run scoreboard players set @s SkillCost 0

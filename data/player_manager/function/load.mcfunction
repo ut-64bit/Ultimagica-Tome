@@ -79,3 +79,6 @@
 
 # リロード時、参加中のプレイヤーに不足している能力値だけを補う。
 execute as @a run function player_manager:stats/ensure
+
+# クラス・スキル定義の変更を参加中のプレイヤーへ反映する。
+execute as @a run function player_manager:stats/rebuild_player
