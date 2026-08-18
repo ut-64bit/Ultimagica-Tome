@@ -1,7 +1,7 @@
 #> api:damage/core/blocked
 #
 
-# GPを減らす
+# ステータス・スキル倍率を適用していない基礎ダメージでGPを減らす。
 	data modify storage api: in.Amount set from storage api:temp DamageInfo.Damage
 	function api:player/guard_power/consume
 

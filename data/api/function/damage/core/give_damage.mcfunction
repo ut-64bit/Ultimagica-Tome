@@ -22,9 +22,8 @@
 
 # ダメージを与える
 	execute if data storage api: out{GiveDamage:true} run function api:damage/core/set_damage_info.m with storage api:temp
-	execute if data storage api: out{GiveDamage:true} run function api:damage/core/apply_multipliers.m with storage api:temp DamageInfo
-	execute if data storage api: out{GiveDamage:true} if entity @s[tag=!Player.Guard] run function api:damage/core/give_damage.m with storage api:temp DamageInfo
-	execute if data storage api: out{GiveDamage:true} if entity @s[tag= Player.Guard] if data storage api:temp DamageInfo.Attribute{Unblockable:true} run function api:damage/core/give_damage.m with storage api:temp DamageInfo
+	execute if data storage api: out{GiveDamage:true} if entity @s[tag=!Player.Guard] run function api:damage/core/deal
+	execute if data storage api: out{GiveDamage:true} if entity @s[tag= Player.Guard] if data storage api:temp DamageInfo.Attribute{Unblockable:true} run function api:damage/core/deal
 	execute if data storage api: out{GiveDamage:true} if entity @s[tag= Player.Guard] unless data storage api:temp DamageInfo.Attribute{Unblockable:true} run function api:damage/core/blocked
 
 # あとしまつ
