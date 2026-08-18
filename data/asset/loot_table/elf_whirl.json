@@ -1,0 +1,52 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:stick",
+					"functions": [
+						{
+							"function": "reference",
+							"name": "asset:weapon_base"
+						},
+						{
+							"function": "reference",
+							"name": "asset:tooltip/magic/elf"
+						},
+						{
+							"function": "set_name",
+							"name": {
+								"translate": "ut_magic.spell.elf_whirl",
+								"color": "white",
+								"italic": false
+							},
+							"target": "custom_name"
+						},
+						{
+							"function": "set_lore",
+							"lore": [
+								{
+									"text": "前方に旋風を放つ",
+									"color": "gray"
+								},
+								{
+									"text": "タメ使用で、前方に激しい旋風を巻き起こす",
+									"color": "gray"
+								}
+							],
+							"mode": "append"
+						},
+						{
+							"function": "minecraft:set_custom_data",
+							"tag": {
+								"AttackID": "elf_whirl"
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

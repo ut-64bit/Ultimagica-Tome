@@ -22,7 +22,7 @@ data modify storage player_manager:loadout registry.skill append value {id:"scho
 data modify storage player_manager:loadout registry.skill append value {id:"school_fire_mastery",description:{text:"劫火の魔術の攻撃を15%強化する",color:"gray"},cost:2}
 data modify storage player_manager:loadout registry.skill append value {id:"school_water_mastery",description:{text:"流水の魔術の攻撃を15%強化する",color:"gray"},cost:2}
 data modify storage player_manager:loadout registry.skill append value {id:"school_thunder_mastery",description:{text:"ヴォルテミアの雷魔術の攻撃を15%強化する",color:"gray"},cost:2}
-data modify storage player_manager:loadout registry.skill append value {id:"school_wind_mastery",description:{text:"森人の祈祷の攻撃を15%強化する",color:"gray"},cost:2}
+data modify storage player_manager:loadout registry.skill append value {id:"school_elf_mastery",description:{text:"森人の祈祷の攻撃を15%強化する",color:"gray"},cost:2}
 
 # 属性強化（物理・聖を除く各属性の与ダメージ1.1倍）
 data modify storage player_manager:loadout registry.skill append value {id:"element_magic_mastery",description:{text:"魔力属性の攻撃を10%強化する",color:"gray"},cost:2}
