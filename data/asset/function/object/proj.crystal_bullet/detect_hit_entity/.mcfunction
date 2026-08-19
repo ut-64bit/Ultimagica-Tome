@@ -1,4 +1,4 @@
-#> asset:object/proj.magic_bullet/detect_hit_entity/
+#> asset:object/proj.crystal_bullet/detect_hit_entity/
 #
 # エンティティの衝突検知に使われるメソッド
 #

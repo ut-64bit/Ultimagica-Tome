@@ -1,4 +1,4 @@
-#> asset:object/proj.magic_bullet/hit_entity/
+#> asset:object/proj.crystal_bullet/hit_entity/
 #
 # エンティティの衝突時に呼び出されるメソッド
 #
