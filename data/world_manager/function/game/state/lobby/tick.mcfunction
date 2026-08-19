@@ -1,13 +1,17 @@
 #> world_manager:game/state/lobby/tick
 
-execute as @a[scores={Game.Ready=1..}] run function world_manager:game/player/toggle_ready
+# 試合終了時に不在だった観戦準備者も、再参加時に表示状態を復元する。
+execute as @a[tag=Game.ObserverReady,team=!Game.Observe] run function world_manager:game/player/restore_observer_ready
 
 execute store result score #PlayerCount _ if entity @a
 execute store result score #ReadyCount _ if entity @a[tag=Game.Ready]
+execute store result score #ObserverReadyCount _ if entity @a[tag=Game.ObserverReady]
+scoreboard players operation #PreparedCount _ = #ReadyCount _
+scoreboard players operation #PreparedCount _ += #ObserverReadyCount _
 execute store result score #MinimumPlayers _ run data get storage world_manager:game config.min_players
 
 # 全員が準備完了していなければ、自動開始待機を解除する。
-execute unless score #PlayerCount _ = #ReadyCount _ run return run function world_manager:game/state/lobby/auto_start/cancel
+execute unless score #PlayerCount _ = #PreparedCount _ run return run function world_manager:game/state/lobby/auto_start/cancel
 execute if score #ReadyCount _ < #MinimumPlayers _ run return run function world_manager:game/state/lobby/auto_start/cancel
 
 # 条件を満たした時点から待機を開始する。

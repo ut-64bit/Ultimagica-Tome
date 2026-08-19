@@ -1,5 +1,5 @@
 #> player:menu/click/0/menu/lobby
-# 準備完了 / 取り消し
+# 参加準備完了 / 取り消し
 
 function world_manager:game/player/toggle_ready
 

@@ -4,8 +4,9 @@
 
 tag @s add Game.Observer
 tag @s remove Game.Ready
-scoreboard players set @s Game.Ready 0
 gamemode spectator @s
 tp @s @r[tag=Game.Active]
 
-tellraw @s [{"text":"[Game] ","color":"gold"},{"text":"進行中の試合には参加できないため、観戦者になりました。","color":"yellow"}]
+execute if entity @s[tag=Game.ObserverReady] run tellraw @s [{"text":"[Game] ","color":"gold"},{"text":"観戦者として試合を開始しました。","color":"aqua"}]
+execute unless entity @s[tag=Game.ObserverReady] run tellraw @s [{"text":"[Game] ","color":"gold"},{"text":"進行中の試合には参加できないため、観戦者になりました。","color":"yellow"}]
+effect clear @s glowing

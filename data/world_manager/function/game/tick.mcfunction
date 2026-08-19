@@ -1,8 +1,5 @@
 #> world_manager:game/tick
 
-# /trigger Game.Ready でロビーの準備状態を切り替える。
-scoreboard players enable @a Game.Ready
-
 execute if data storage world_manager:game {state:"lobby"} run return run function world_manager:game/state/lobby/tick
 execute if data storage world_manager:game {state:"countdown"} run return run function world_manager:game/state/countdown/tick
 execute if data storage world_manager:game {state:"playing"} run return run function world_manager:game/state/playing/tick

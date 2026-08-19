@@ -5,12 +5,16 @@
 
 scoreboard objectives add Game.Timer dummy
 scoreboard objectives add Game.Deaths deathCount
-scoreboard objectives add Game.Ready trigger
 
 team add Game.Ready
 team modify Game.Ready displayName {"text":"Ready Players","color":"green"}
 team modify Game.Ready color green
 team modify Game.Ready prefix {"text":"[READY] ","color":"green"}
+
+team add Game.Observe
+team modify Game.Observe displayName {"text":"Ready Observers","color":"aqua"}
+team modify Game.Observe color aqua
+team modify Game.Observe prefix {"text":"[OBSERVE] ","color":"aqua"}
 
 execute unless data storage world_manager:game state run data modify storage world_manager:game state set value "lobby"
 
@@ -23,6 +27,7 @@ execute unless data storage world_manager:game config.min_players run data modif
 execute unless data storage world_manager:game config.auto_start_ticks run data modify storage world_manager:game config.auto_start_ticks set value 60
 execute unless data storage world_manager:game config.countdown_ticks run data modify storage world_manager:game config.countdown_ticks set value 100
 execute unless data storage world_manager:game config.end_ticks run data modify storage world_manager:game config.end_ticks set value 100
+data modify storage world_manager:game config.lobby set value {x:22.0d,y:-59.0d,z:28.0d}
 
 gamerule immediate_respawn true
 execute if data storage world_manager:game {state:"lobby"} run gamerule pvp false

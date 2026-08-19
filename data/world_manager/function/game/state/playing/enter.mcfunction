@@ -17,6 +17,8 @@ execute as @a[tag=Game.Active] run function api:player/invincibility/clear
 gamemode adventure @a[tag=Game.Active]
 gamerule pvp true
 
+team join Battle @a
+
 function world_manager:game/dispatch/stage/start.m with storage world_manager:game runtime
 function world_manager:game/dispatch/rule/start.m with storage world_manager:game runtime
 
