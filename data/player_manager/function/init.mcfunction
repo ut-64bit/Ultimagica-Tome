@@ -28,7 +28,6 @@
 	attribute @s sneaking_speed base set 1
 	attribute @s jump_strength base set 0
 	attribute @s step_height base set 1
-	attribute @s camera_distance base reset
 
 # 永続バフ付与
 	effect give @s saturation infinite 0 true

@@ -10,3 +10,6 @@ function player_manager:loadout/apply
 
 scoreboard players set @s Game.Deaths 0
 gamemode adventure @s
+
+# Attribute
+	attribute @s camera_distance base set 0
