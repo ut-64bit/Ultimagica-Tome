@@ -20,7 +20,7 @@
 	scoreboard players operation @s Stamina > #c_0 const
 
 # 自然回復が再開するのを遅らせる
-	scoreboard players set @s StaminaRecoverDelay 40
+	scoreboard players operation @s StaminaRecoverDelay = @s MPRecoverDelay
 
 # あとしまつ
 	scoreboard players reset #t_Amount _

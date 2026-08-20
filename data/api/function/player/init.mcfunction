@@ -1,6 +1,8 @@
 #> api:player/init
 #
-# プレイヤーを初期化する
+# プレイヤーの実行時状態を初期化する。
+# ロードアウトの選択内容など、試合をまたいで保持するデータは変更しない。
+# @api
 #
 
 execute unless entity @s[type=player] run return fail

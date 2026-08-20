@@ -12,4 +12,5 @@
 	function api:player/init
 	function api:player/weapon/set {type:"basic_rod"}
 
-	function api:player/fsm/start {state:"idle"}
+# ロビーへの初回参加
+	execute if data storage world_manager:game {state:"lobby"} run function world_manager:lobby/teleport.m with storage world_manager:game config.lobby
