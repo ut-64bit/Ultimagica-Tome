@@ -1,7 +1,7 @@
 #> api:player/loadout/skill/select
 #
 # コスト上限内でスキルを追加する。
-# 使用例: execute as @p[distance=..3] run function api:player/loadout/skill/select {skill:"spear_mastery"}
+# 使用例: execute as @p[distance=..3] run function api:player/loadout/skill/select {skill:"tag_spear_damage"}
 # @input skill: player:skill/loadで登録したスキルID
 # @api
 

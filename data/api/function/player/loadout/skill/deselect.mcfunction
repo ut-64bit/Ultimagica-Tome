@@ -1,7 +1,7 @@
 #> api:player/loadout/skill/deselect
 #
 # 選択スキルを解除する。固有スキルは解除できない。
-# 使用例: execute as @p[distance=..3] run function api:player/loadout/skill/deselect {skill:"spear_mastery"}
+# 使用例: execute as @p[distance=..3] run function api:player/loadout/skill/deselect {skill:"tag_spear_damage"}
 # @api
 
 execute unless entity @s[type=player] run return fail
