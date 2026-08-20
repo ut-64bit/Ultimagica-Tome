@@ -42,6 +42,7 @@
 	scoreboard objectives add MaxStamina dummy
 	scoreboard objectives add StaminaRecoverDelay dummy
 	scoreboard objectives add StaminaRecoverSpeed dummy
+	scoreboard objectives add MPRecoverDelay dummy
 
 	#> 攻撃
 	scoreboard objectives add ChargePhase dummy

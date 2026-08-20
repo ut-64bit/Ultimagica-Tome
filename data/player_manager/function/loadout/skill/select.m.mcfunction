@@ -15,8 +15,7 @@ $execute if data storage player:context this.ActiveSkills[{id:"$(skill)"}] run r
 
 # 選択済み・固有スキルとの競合を確認する。
 data modify storage player_manager:loadout temp.conflict.candidate set from storage player_manager:loadout temp.skill.select
-function player_manager:loadout/skill/conflict/check
-execute if score #SkillConflict _ matches 1 run return run function player_manager:loadout/skill/error/conflict
+execute if function player_manager:loadout/skill/conflict/check run return run function player_manager:loadout/skill/error/conflict
 data remove storage player_manager:loadout temp.conflict
 
 execute store result score #CurrentSkillCost _ run data get storage player_manager:loadout temp.skill.select.cost
