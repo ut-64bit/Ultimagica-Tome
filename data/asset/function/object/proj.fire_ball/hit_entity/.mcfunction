@@ -4,10 +4,10 @@
 #
 
 # 爆発
-	function asset:object/proj.fire_ball/explode
+	function asset:object/proj.fire_ball/explode/
 
 # ダメージを与える
-	data modify storage api: in.AttackData set from storage asset:context this.AttackData[1]
+	data modify storage api: in.AttackData set from storage asset:context this.AttackData[0]
 	execute positioned ~-0.5 ~-0.5 ~-0.5 as @n[type=!#lib:no_living,tag=!_owner,tag=!_this,tag=!Game.Observer,tag=!Player.NoCollison,dx=0] unless function api:damage/is_invincible \
 		run function api:damage/give_damage
 

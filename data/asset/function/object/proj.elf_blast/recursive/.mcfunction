@@ -14,6 +14,6 @@ scoreboard players operation #t_Interval _ %= #c_8 const
 	particle dust{color:10289072,scale:1.5} ^ ^ ^ 0.5 0.5 0.5 0 1 normal
 
 # 爆発
-	execute if score #t_Interval _ matches 0 run function asset:object/proj.elf_blast/recursive/explode
+	execute if score #t_Interval _ matches 0 run function asset:object/proj.elf_blast/explode/
 
 scoreboard players reset #t_Interval _

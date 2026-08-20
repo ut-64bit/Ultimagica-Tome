@@ -4,7 +4,7 @@
 #
 
 # 爆発
-	function asset:object/proj.fire_ball/explode
+	function asset:object/proj.fire_ball/explode/
 
 # 弾丸を破壊する
 	function api:common/auto_kill

@@ -1,4 +1,4 @@
-#> asset:object/proj.elf_blast/recursive/explode
+#> asset:object/proj.elf_blast/explode/
 #
 
 # ダメージを与える
@@ -9,7 +9,7 @@
 	tag @e[tag=_hit,distance=..100] remove _hit
 
 	data modify storage api: in.AttackData set from storage asset:context this.AttackData[0]
-	execute as @e[tag=_ray,distance=..100] unless function api:damage/is_invincible run function api:damage/give_damage
+	execute as @e[tag=_ray,distance=..100] unless function api:damage/is_invincible run function asset:object/proj.elf_blast/explode/give_damage
 	tag @e[tag=_ray,distance=..100] remove _ray
 
 # 演出

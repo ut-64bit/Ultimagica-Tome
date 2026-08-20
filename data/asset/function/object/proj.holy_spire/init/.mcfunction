@@ -9,6 +9,6 @@ function asset:object/super.init
 	data modify storage asset:context this.State set value "idle"
 
 # AttackDataを生成する
-	data modify storage api: in set value { Damage:6, Element:"holy", School:"saint", Tags:["spear"] }
+	data modify storage api: in set value { Damage:6, Element:"holy", School:"saint", Tags:["miracle","spear"] }
 	function api:damage/create_attack_data
 	data modify storage asset:context this.AttackData append from storage api: out.AttackData

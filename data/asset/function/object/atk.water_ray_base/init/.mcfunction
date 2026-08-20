@@ -12,6 +12,6 @@ function asset:object/super.init
 	data modify storage asset:context this.Speed set value 40
 
 # 威力を設定
-	data modify storage api: in set value { Damage:5, Element:"water", School:"water", Tags:[] }
+	data modify storage api: in set value { Damage:5, Element:"water", School:"water", Tags:["magecraft"] }
 	function api:damage/create_attack_data
 	data modify storage asset:context this.AttackData set from storage api: out.AttackData

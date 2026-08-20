@@ -13,6 +13,6 @@ function asset:object/super.init
 	data remove storage asset:temp Y
 
 # AttackDataを生成する
-	data modify storage api: in set value { Damage:8, Element:"physical", School:"gravity", Tags:["ground"] }
+	data modify storage api: in set value { Damage:8, Element:"physical", School:"gravity", Tags:["magecraft","ground"] }
 	function api:damage/create_attack_data
 	data modify storage asset:context this.AttackData append from storage api: out.AttackData
