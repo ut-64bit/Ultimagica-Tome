@@ -18,4 +18,5 @@ function player_manager:stats/class/load.m with storage player:context this.Load
 scoreboard players operation @s Stamina < @s MaxStamina
 scoreboard players operation @s GuardPower < @s MaxGuardPower
 data remove storage player_manager:loadout temp.rebuild
+data remove storage player_manager:loadout temp.conflict
 return 1

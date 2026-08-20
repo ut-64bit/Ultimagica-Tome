@@ -32,3 +32,4 @@ scoreboard players set @s SkillCost 0
 data remove storage player:context this.Stats.DamageDealtModifiers
 data remove storage player:context this.Stats.DamageTakenModifiers
 data modify storage player:context this.ActiveSkills set value []
+data remove storage player_manager:loadout temp.conflict

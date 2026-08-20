@@ -8,6 +8,10 @@ execute unless data storage player_manager:loadout temp.rebuild.skill.cost run r
 # 固有スキルや選択済みスキルとの重複は除去する。
 $execute if data storage player:context this.ActiveSkills[{id:"$(id)"}] run return 0
 
+# 固有スキルや先に適用された選択スキルと競合する場合は除去する。
+data modify storage player_manager:loadout temp.conflict.candidate set from storage player_manager:loadout temp.rebuild.skill
+execute if function player_manager:loadout/skill/conflict/check run return 0
+
 execute store result score #CurrentSkillCost _ run data get storage player_manager:loadout temp.rebuild.skill.cost
 execute if score #CurrentSkillCost _ matches ..-1 run return 0
 scoreboard players operation #NextSkillCost _ = @s SkillCost

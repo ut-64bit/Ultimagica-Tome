@@ -6,6 +6,10 @@ $data modify storage player_manager:loadout temp.rebuild.skill set from storage 
 execute unless data storage player_manager:loadout temp.rebuild.skill run return 0
 $execute if data storage player:context this.ActiveSkills[{id:"$(id)"}] run return 0
 
+# 固有スキル同士、および通常スキルとの競合を除去する。
+data modify storage player_manager:loadout temp.conflict.candidate set from storage player_manager:loadout temp.rebuild.skill
+execute if function player_manager:loadout/skill/conflict/check run return 0
+
 $data modify storage player:context this.ActiveSkills append value {id:"$(id)"}
 $function player:skill/$(id)/apply
 return 1
