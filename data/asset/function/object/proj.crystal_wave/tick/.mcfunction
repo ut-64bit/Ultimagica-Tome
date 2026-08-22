@@ -8,12 +8,10 @@ function asset:object/interface.attackable/get_owner
 scoreboard players add @s General.Tick 1
 
 # エンティティへの衝突
-	execute if score @s General.Tick matches 15.. run function asset:object/call.m {method:"detect_hit_entity"}
-	execute if data storage asset:context {IsHitEntity:true} run function asset:object/call.m {method:"hit_entity"}
-	data remove storage asset:context IsHitEntity
+	execute if score @s General.Tick matches 15.. run function asset:object/proj.crystal_wave/tick/detect_hit_entity
 
 # 演出
-	particle enchant ~ ~0.3 ~ 0.3 0.3 0.3 0 1 normal
+	execute if score @s General.Tick matches ..35 run particle enchant ~ ~0.3 ~ 0.3 0.3 0.3 0 1 normal
 	execute if score @s General.Tick matches 2 run data merge entity @s {transformation:{scale:[1.5,1.2,1.5]},interpolation_duration:25,start_interpolation:0}
 	execute if score @s General.Tick matches 1..30 run function asset:object/proj.crystal_wave/tick/vfx.m with entity @s
 	execute if score @s General.Tick matches 35 run playsound block.amethyst_block.place player @a ~ ~ ~ 0.4 1.1
