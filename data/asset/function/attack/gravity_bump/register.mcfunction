@@ -8,14 +8,14 @@
 
 # チャージ時間
 	data modify storage asset:attack ChargeTime append value 5
-	data modify storage asset:attack ChargeTime append value 15
+	data modify storage asset:attack ChargeTime append value 6
 
 # チャージ完了後、保持できるか
 	data modify storage asset:attack IsHoldable set value false
 
 
 # 消費スタミナ
-	data modify storage asset:attack RequireStamina set value 12
+	data modify storage asset:attack RequireStamina set value 6
 
 # フィールド
 	# data modify storage asset:attack Field.Value set value

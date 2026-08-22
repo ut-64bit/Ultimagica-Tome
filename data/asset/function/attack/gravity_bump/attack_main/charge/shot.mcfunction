@@ -4,3 +4,7 @@
 # 発射する
 	function api:clear_in
 	function api:object/summon.m {ID:"proj.gravity_bump_runner"}
+
+# MP消費
+	data modify storage api: in.Amount set value 6
+	function api:player/stamina/consume
