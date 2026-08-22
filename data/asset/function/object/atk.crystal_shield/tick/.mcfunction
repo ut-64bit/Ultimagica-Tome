@@ -13,4 +13,4 @@ tag @n[tag=_owner,distance=..1000] remove _owner
     execute if score #health _ matches ..990 run function api:common/auto_kill
     scoreboard players reset #health _
 
-execute if score @s General.Tick matches 400.. run function api:common/auto_kill
+execute if score @s General.Tick matches 200.. run function api:common/auto_kill

@@ -9,4 +9,4 @@ scoreboard players add @s General.Tick 1
     execute if score #health _ matches ..980 run function api:common/auto_kill
     scoreboard players reset #health _
 
-execute if score @s General.Tick matches 400.. run function api:common/auto_kill
+execute if score @s General.Tick matches 200.. run function api:common/auto_kill

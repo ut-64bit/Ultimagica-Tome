@@ -10,5 +10,5 @@
 	# function api:object/summon.m {ID:"particle.magic_crystal"}
 
 # MP消費
-	data modify storage api: in.Amount set value 25
+	data modify storage api: in.Amount set value 18
 	function api:player/stamina/consume

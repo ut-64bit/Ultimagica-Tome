@@ -7,7 +7,7 @@
 	data modify storage asset:attack ID set value "crystal_shield"
 
 # チャージ時間
-	data modify storage asset:attack ChargeTime append value 10
+	data modify storage asset:attack ChargeTime append value 5
 	data modify storage asset:attack ChargeTime append value 5
 
 # チャージ完了後、保持できるか
@@ -15,7 +15,7 @@
 
 
 # 消費スタミナ
-	data modify storage asset:attack RequireStamina set value 5
+	data modify storage asset:attack RequireStamina set value 2
 
 # フィールド
 	# data modify storage asset:attack Field.Value set value
