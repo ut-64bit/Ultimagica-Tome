@@ -10,6 +10,8 @@ data modify storage player_manager:loadout registry.magic append value {id:"grav
 data modify storage player_manager:loadout registry.magic append value {id:"crystal_shield"}
 data modify storage player_manager:loadout registry.magic append value {id:"fire_beam"}
 data modify storage player_manager:loadout registry.magic append value {id:"gravity_flying_debris"}
+data modify storage player_manager:loadout registry.magic append value {id:"holy_judgement"}
+data modify storage player_manager:loadout registry.magic append value {id:"holy_beam"}
 
 # 個別のクラス・スキル定義はplayer側で管理する。
 data modify storage player_manager:loadout registry.class set value []
