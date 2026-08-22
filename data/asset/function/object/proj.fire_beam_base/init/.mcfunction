@@ -8,6 +8,9 @@ function asset:object/super.init
 # 向きを初期化する
 	tp @s ~ ~ ~ ~ ~
 
+# tp補間を有効にする
+	data modify entity @s teleport_duration set value 1
+
 # AttackDataを生成する
 	data modify storage api: in set value { Damage:4, Element:"fire", School:"fire", Tags:["magecraft","beam"] }
 	function api:damage/create_attack_data
