@@ -1,4 +1,5 @@
 #> player_manager:loadout/preset/share.m
+# 指定された保存済み構成の内容を全プレイヤーへ共有する。
 # macro: {slot:int}
 
 function player_manager:loadout/preset/ensure

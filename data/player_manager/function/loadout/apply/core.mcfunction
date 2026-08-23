@@ -1,4 +1,6 @@
 #> player_manager:loadout/apply/core
+# 読み込み済みのプレイヤー構成から能力値を再構築し、構成アイテムを付与する。
+# player:context this が読み込まれている状態で使用する。
 
 function player_manager:stats/rebuild
 

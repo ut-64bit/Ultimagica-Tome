@@ -60,6 +60,7 @@
 	#> ガード
 	scoreboard objectives add GuardTime dummy
 	scoreboard objectives add GuardLockTime dummy
+	scoreboard objectives add GuardRepeatCount dummy
 	scoreboard objectives add GuardPower dummy
 	scoreboard objectives add MaxGuardPower dummy
 	scoreboard objectives add GuardPowerRecoverDelay dummy

@@ -1,4 +1,5 @@
 #> player_manager:loadout/preset/icon/set.m
+# 編集中の保存済み構成へ指定アイコンを設定する。
 # macro: {icon:string}
 
 execute unless function player_manager:loadout/can_edit run return 0

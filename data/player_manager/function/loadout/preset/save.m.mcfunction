@@ -1,4 +1,5 @@
 #> player_manager:loadout/preset/save.m
+# 現在のロードアウトを新規または既存の構成スロットへ保存する。
 # macro: {slot:int}
 #
 # slot=-1なら末尾へ新規保存し、それ以外なら指定位置へ上書きする。

@@ -1,4 +1,5 @@
 #> player_manager:loadout/apply/next
+# 構成内の魔法をスロット上限まで順番に付与する。
 
 execute unless data storage player_manager:loadout temp.apply.magic[0] run return 0
 

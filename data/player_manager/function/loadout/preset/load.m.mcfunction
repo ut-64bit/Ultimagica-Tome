@@ -1,4 +1,5 @@
 #> player_manager:loadout/preset/load.m
+# 保存済み構成を現在のロードアウトへ呼び出し、アイテムと表示を更新する。
 # macro: {slot:int}
 
 execute unless function player_manager:loadout/can_edit run return 0

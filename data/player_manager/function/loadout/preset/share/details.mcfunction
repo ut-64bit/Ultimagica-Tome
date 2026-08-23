@@ -1,4 +1,5 @@
 #> player_manager:loadout/preset/share/details
+# 一時ストレージに取得した構成のクラス・魔法・スキルを表示する。
 
 # クラス
 execute if data storage player_manager:loadout temp.preset.current.Loadout{Class:""} run tellraw @a [{"text":"  クラス: ","color":"gray"},{"text":"未設定","color":"dark_gray"}]

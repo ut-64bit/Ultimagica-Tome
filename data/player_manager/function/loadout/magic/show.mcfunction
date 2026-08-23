@@ -1,4 +1,5 @@
 #> player_manager:loadout/magic/show
+# 現在選択中の魔法を未設定スロットを含めてプレイヤーへ表示する。
 
 function player_manager:loadout/ensure
 tellraw @s [{"text":"[Loadout] ","color":"light_purple"},{"text":"選択中の魔法","color":"gold"}]

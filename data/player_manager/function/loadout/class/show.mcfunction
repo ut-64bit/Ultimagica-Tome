@@ -1,4 +1,5 @@
 #> player_manager:loadout/class/show
+# 現在選択中のクラスをプレイヤーへ表示する。
 
 function player_manager:loadout/ensure
 function player_manager:stats/rebuild

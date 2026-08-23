@@ -1,4 +1,5 @@
 #> player_manager:loadout/preset/delete.m
+# 指定された保存済み構成を検証して削除する。
 # macro: {slot:int,number:int}
 
 execute unless function player_manager:loadout/can_edit run return 0

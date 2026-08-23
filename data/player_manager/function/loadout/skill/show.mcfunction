@@ -1,4 +1,5 @@
 #> player_manager:loadout/skill/show
+# 現在のクラス・選択スキル・固有スキルをプレイヤーへ表示する。
 
 function player_manager:loadout/ensure
 function player_manager:stats/rebuild
