@@ -7,6 +7,7 @@
 	tag @s remove Menu.LoadoutEdit
 	tag @s remove Menu.LoadoutDeleteConfirm
 	data remove storage player:context this.Menu.LoadoutPreset
+	data remove storage player:context this.Menu.LoadoutIconPage
 
 # 更新
 	function player:menu/update

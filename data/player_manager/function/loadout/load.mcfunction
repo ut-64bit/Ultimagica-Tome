@@ -18,3 +18,6 @@ data modify storage player_manager:loadout registry.class set value []
 data modify storage player_manager:loadout registry.skill set value []
 function player:class/load
 function player:skill/load
+
+# 構成アイコンの候補はplayer側で管理する。
+function player:menu/loadout/icon/load

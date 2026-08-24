@@ -21,7 +21,9 @@ scoreboard players operation #LoadoutPresetNumber _ = #LoadoutPresetSlot _
 scoreboard players add #LoadoutPresetNumber _ 1
 execute store result storage player_manager:loadout temp.preset.action.number int 1 run scoreboard players get #LoadoutPresetNumber _
 
-execute if score #LoadoutPresetSlot _ = #LoadoutPresetCount _ run data modify storage player:context this.LoadoutPresets append value {Loadout:{},Icon:"shulker_box"}
+execute if score #LoadoutPresetSlot _ = #LoadoutPresetCount _ run data modify storage player:context this.LoadoutPresets append value {Loadout:{}}
+execute if score #LoadoutPresetSlot _ = #LoadoutPresetCount _ if data storage player_manager:loadout registry.preset_icon[0].icon run data modify storage player:context this.LoadoutPresets[-1].Icon set from storage player_manager:loadout registry.preset_icon[0].icon
+execute if score #LoadoutPresetSlot _ = #LoadoutPresetCount _ unless data storage player_manager:loadout registry.preset_icon[0].icon run data modify storage player:context this.LoadoutPresets[-1].Icon set value "shulker_box"
 function player_manager:loadout/preset/save_at.m with storage player_manager:loadout temp.preset.action
 function player_manager:loadout/preset/message/save.m with storage player_manager:loadout temp.preset.action
 data remove storage player_manager:loadout temp.preset

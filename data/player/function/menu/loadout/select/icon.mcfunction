@@ -1,17 +1,18 @@
 #> player:menu/loadout/select/icon
+# バンドル内で選択された位置の登録アイコンを構成へ設定する。
 
-execute if items entity @s player.cursor structure_void[custom_data~{menu:{id:"loadout_preset_icon",icon:"shulker_box"}}] run function player_manager:loadout/preset/icon/set.m {icon:"shulker_box"}
-execute if items entity @s player.cursor structure_void[custom_data~{menu:{id:"loadout_preset_icon",icon:"chest"}}] run function player_manager:loadout/preset/icon/set.m {icon:"chest"}
-execute if items entity @s player.cursor structure_void[custom_data~{menu:{id:"loadout_preset_icon",icon:"ender_chest"}}] run function player_manager:loadout/preset/icon/set.m {icon:"ender_chest"}
-execute if items entity @s player.cursor structure_void[custom_data~{menu:{id:"loadout_preset_icon",icon:"nether_star"}}] run function player_manager:loadout/preset/icon/set.m {icon:"nether_star"}
-execute if items entity @s player.cursor structure_void[custom_data~{menu:{id:"loadout_preset_icon",icon:"amethyst_shard"}}] run function player_manager:loadout/preset/icon/set.m {icon:"amethyst_shard"}
-execute if items entity @s player.cursor structure_void[custom_data~{menu:{id:"loadout_preset_icon",icon:"blaze_powder"}}] run function player_manager:loadout/preset/icon/set.m {icon:"blaze_powder"}
-execute if items entity @s player.cursor structure_void[custom_data~{menu:{id:"loadout_preset_icon",icon:"heart_of_the_sea"}}] run function player_manager:loadout/preset/icon/set.m {icon:"heart_of_the_sea"}
-execute if items entity @s player.cursor structure_void[custom_data~{menu:{id:"loadout_preset_icon",icon:"feather"}}] run function player_manager:loadout/preset/icon/set.m {icon:"feather"}
-execute if items entity @s player.cursor structure_void[custom_data~{menu:{id:"loadout_preset_icon",icon:"diamond"}}] run function player_manager:loadout/preset/icon/set.m {icon:"diamond"}
-execute if items entity @s player.cursor structure_void[custom_data~{menu:{id:"loadout_preset_icon",icon:"emerald"}}] run function player_manager:loadout/preset/icon/set.m {icon:"emerald"}
-execute if items entity @s player.cursor structure_void[custom_data~{menu:{id:"loadout_preset_icon",icon:"echo_shard"}}] run function player_manager:loadout/preset/icon/set.m {icon:"echo_shard"}
-execute if items entity @s player.cursor structure_void[custom_data~{menu:{id:"loadout_preset_icon",icon:"book"}}] run function player_manager:loadout/preset/icon/set.m {icon:"book"}
+execute if items entity @s player.cursor structure_void[custom_data~{menu:{id:"loadout_preset_icon",slot:0}}] run function player_manager:loadout/preset/icon/select_page.m {slot:0}
+execute if items entity @s player.cursor structure_void[custom_data~{menu:{id:"loadout_preset_icon",slot:1}}] run function player_manager:loadout/preset/icon/select_page.m {slot:1}
+execute if items entity @s player.cursor structure_void[custom_data~{menu:{id:"loadout_preset_icon",slot:2}}] run function player_manager:loadout/preset/icon/select_page.m {slot:2}
+execute if items entity @s player.cursor structure_void[custom_data~{menu:{id:"loadout_preset_icon",slot:3}}] run function player_manager:loadout/preset/icon/select_page.m {slot:3}
+execute if items entity @s player.cursor structure_void[custom_data~{menu:{id:"loadout_preset_icon",slot:4}}] run function player_manager:loadout/preset/icon/select_page.m {slot:4}
+execute if items entity @s player.cursor structure_void[custom_data~{menu:{id:"loadout_preset_icon",slot:5}}] run function player_manager:loadout/preset/icon/select_page.m {slot:5}
+execute if items entity @s player.cursor structure_void[custom_data~{menu:{id:"loadout_preset_icon",slot:6}}] run function player_manager:loadout/preset/icon/select_page.m {slot:6}
+execute if items entity @s player.cursor structure_void[custom_data~{menu:{id:"loadout_preset_icon",slot:7}}] run function player_manager:loadout/preset/icon/select_page.m {slot:7}
+execute if items entity @s player.cursor structure_void[custom_data~{menu:{id:"loadout_preset_icon",slot:8}}] run function player_manager:loadout/preset/icon/select_page.m {slot:8}
+execute if items entity @s player.cursor structure_void[custom_data~{menu:{id:"loadout_preset_icon",slot:9}}] run function player_manager:loadout/preset/icon/select_page.m {slot:9}
+execute if items entity @s player.cursor structure_void[custom_data~{menu:{id:"loadout_preset_icon",slot:10}}] run function player_manager:loadout/preset/icon/select_page.m {slot:10}
+execute if items entity @s player.cursor structure_void[custom_data~{menu:{id:"loadout_preset_icon",slot:11}}] run function player_manager:loadout/preset/icon/select_page.m {slot:11}
 
 tag @s remove Menu.LoadoutDeleteConfirm
 stopsound @s player item.bundle.remove_one
