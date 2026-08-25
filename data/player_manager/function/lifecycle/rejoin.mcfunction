@@ -8,7 +8,7 @@
 	function player_manager:init
 
 # ロビーへの再参加
-	execute if data storage world_manager:game {state:"lobby"} run function world_manager:lobby/teleport.m with storage world_manager:game config.lobby
+	execute if data storage world_manager:game {state:"lobby"} run function world_manager:lobby/teleport
 
 # 準備完了を解除する
 	function world_manager:game/player/clear_ready

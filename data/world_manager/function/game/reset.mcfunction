@@ -23,7 +23,7 @@ tag @a remove Game.Waiting
 execute as @e[tag=AssetObject] run function api:common/auto_kill
 gamemode adventure @a
 clear @a
-execute as @a run function world_manager:lobby/teleport.m with storage world_manager:game config.lobby
+execute as @a run function world_manager:lobby/teleport
 execute as @a[tag=Game.ObserverReady] run function world_manager:game/player/restore_observer_ready
 gamerule pvp false
 

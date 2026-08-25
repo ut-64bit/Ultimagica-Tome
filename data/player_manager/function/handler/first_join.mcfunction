@@ -13,4 +13,4 @@
 	function api:player/weapon/set {type:"basic_rod"}
 
 # ロビーへの初回参加
-	execute if data storage world_manager:game {state:"lobby"} run function world_manager:lobby/teleport.m with storage world_manager:game config.lobby
+	execute if data storage world_manager:game {state:"lobby"} run function world_manager:lobby/teleport
