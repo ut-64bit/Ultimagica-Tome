@@ -8,6 +8,7 @@
 
 # チャージ時間
 	data modify storage asset:attack ChargeTime append value 10
+	data modify storage asset:attack ChargeTime append value 5
 
 # チャージ完了後、保持できるか
 	data modify storage asset:attack IsHoldable set value false

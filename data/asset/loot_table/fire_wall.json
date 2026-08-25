@@ -28,7 +28,11 @@
 							"function": "set_lore",
 							"lore": [
 								{
-									"text": "足元から激しい炎を放つ",
+									"text": "足元から激しい炎の壁を作る",
+									"color": "gray"
+								},
+								{
+									"text": "タメで目の前に壁を作る",
 									"color": "gray"
 								}
 							],
