@@ -18,6 +18,7 @@ tag @a remove Game.Active
 tag @a remove Game.Eliminated
 tag @a remove Game.Observer
 tag @a remove Game.TempSpectator
+tag @a remove Game.Waiting
 
 execute as @e[tag=AssetObject] run function api:common/auto_kill
 gamemode adventure @a

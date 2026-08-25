@@ -9,9 +9,12 @@ tag @a remove Game.Active
 tag @a remove Game.Eliminated
 tag @a remove Game.Observer
 tag @a remove Game.TempSpectator
+tag @a remove Game.Waiting
 
 tag @a[tag=Game.Ready] add Game.Participant
 tag @a[tag=Game.Ready] add Game.Active
+# 開始時点で未準備のプレイヤーは、この試合中もロビーに残す。
+tag @a[tag=!Game.Ready,tag=!Game.ObserverReady] add Game.Waiting
 
 data modify storage world_manager:game state set value "countdown"
 execute store result score #Game Game.Timer run data get storage world_manager:game runtime.countdown_ticks

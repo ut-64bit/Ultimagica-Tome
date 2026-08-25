@@ -15,13 +15,14 @@ execute as @a[tag=Game.Active] run function api:player/invincibility/clear
 gamemode adventure @a[tag=Game.Active]
 gamerule pvp true
 
-team join Battle @a
+team join Battle @a[tag=Game.Participant]
 
 function world_manager:game/dispatch/stage/start.m with storage world_manager:game runtime
 function world_manager:game/dispatch/rule/start.m with storage world_manager:game runtime
 
-# カウントダウン終了時に、非参加者を観戦者化して生存者の位置へ移動する。
-execute as @a[tag=!Game.Participant] run function world_manager:game/player/observe
+# 観戦準備済みのプレイヤーだけを、生存者の位置へ移動して観戦者化する。
+# 未準備の Game.Waiting はゲームモードと位置を変えず、ロビーに残す。
+execute as @a[tag=Game.ObserverReady,tag=!Game.Participant] run function world_manager:game/player/observe
 
 title @a title {"text":"FIGHT!","color":"red","bold":true}
 
