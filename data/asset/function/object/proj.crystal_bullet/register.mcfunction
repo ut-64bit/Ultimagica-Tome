@@ -12,7 +12,7 @@
 	data modify storage asset:object ID set value "proj.crystal_bullet"
 # フィールド
 	# 飛距離
-	data modify storage asset:object Field.Range set value 100
+	data modify storage asset:object Field.Range set value 80
 	# 移動速度
 	data modify storage asset:object Field.Speed set value 12
 	# 1ステップあたりの移動距離

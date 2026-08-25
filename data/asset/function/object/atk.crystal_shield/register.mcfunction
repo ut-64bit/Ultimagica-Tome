@@ -11,4 +11,5 @@
 # ID
 	data modify storage asset:object ID set value "atk.crystal_shield"
 # フィールド
-	# data modify storage asset:object Field.Value set value
+	# 持続時間
+	data modify storage asset:object Field.Duration set value 200
