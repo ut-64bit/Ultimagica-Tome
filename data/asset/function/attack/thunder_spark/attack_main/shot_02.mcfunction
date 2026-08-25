@@ -7,5 +7,5 @@
 	execute anchored eyes positioned ^-0.2 ^-0.2 ^0.5 run function api:object/summon.m {ID:"proj.thunder_spark"}
 
 # MP消費
-	data modify storage api: in.Amount set value 2
+	data modify storage api: in.Amount set value 2.333
 	function api:player/stamina/consume
