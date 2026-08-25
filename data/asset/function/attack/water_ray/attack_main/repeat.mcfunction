@@ -2,7 +2,7 @@
 #
 
 # MP消費
-	data modify storage api: in.Amount set value 6
+	data modify storage api: in.Amount set value 4
 	execute unless function api:player/stamina/check run return fail
 	function api:player/stamina/consume
 
