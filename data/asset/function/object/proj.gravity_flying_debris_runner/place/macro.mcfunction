@@ -2,5 +2,5 @@
 #
 
 function api:clear_in
-data modify storage api: in.FieldOverride.AttackData set from storage asset:context this.AttackData
 $execute positioned ~$(X) ~ ~$(Z) run function api:object/summon.m {ID:"proj.gravity_flying_debris"}
+$execute positioned ~$(X) ~ ~$(Z) run particle instant_effect{color:11141290,power:0} ~ ~0.1 ~ 0 0 0 0 1 force

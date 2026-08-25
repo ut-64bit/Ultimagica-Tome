@@ -23,4 +23,4 @@
 	data modify storage asset:object Field.MaxRiseDistance set value 3
 	data modify storage asset:object Field.MaxDropDistance set value 3
 	# Delay
-	data modify storage asset:object Field.Delay set value 10
+	data modify storage asset:object Field.Delay set value 2

@@ -24,5 +24,6 @@ data remove storage asset:temp Y
 tag @n[tag=_owner,distance=..1000] remove _owner
 
 #演出
-particle explosion ~ ~ ~ 0 0 0 0 1 force
+particle crit ~ ~0.1 ~ 0.25 0 0.25 0.25 25 force
+particle block{block_state:{Name:"pointed_dripstone"}} ~ ~ ~ 0.1 0.1 0.1 0 10 normal
 playsound entity.wither.break_block player @a ~ ~ ~ 0.25 1
