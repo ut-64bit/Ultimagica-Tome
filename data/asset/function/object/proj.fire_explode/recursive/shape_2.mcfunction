@@ -1,0 +1,43 @@
+#> asset:object/proj.fire_expldoe/recursive/shape_2
+#
+
+execute positioned ^0.63640 ^-.63640 ^ run particle instant_effect{color:16420352} ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^0.63640 ^-.50912 ^ run particle instant_effect{color:16420352} ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^0.63640 ^-.38184 ^ run particle instant_effect{color:16420352} ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^0.63640 ^-.25456 ^ run particle instant_effect{color:16420352} ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^0.63640 ^-.12728 ^ run particle instant_effect{color:16420352} ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^0.63640 ^0.00000 ^ run particle instant_effect{color:16420352} ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^0.63640 ^0.12728 ^ run particle instant_effect{color:16420352} ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^0.63640 ^0.25456 ^ run particle instant_effect{color:16420352} ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^0.63640 ^0.38184 ^ run particle instant_effect{color:16420352} ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^0.63640 ^0.50912 ^ run particle instant_effect{color:16420352} ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^0.63640 ^0.63640 ^ run particle instant_effect{color:16420352} ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^0.50912 ^0.63640 ^ run particle instant_effect{color:16420352} ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^0.38184 ^0.63640 ^ run particle instant_effect{color:16420352} ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^0.25456 ^0.63640 ^ run particle instant_effect{color:16420352} ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^0.12728 ^0.63640 ^ run particle instant_effect{color:16420352} ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^0.00000 ^0.63640 ^ run particle instant_effect{color:16420352} ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^-.12728 ^0.63640 ^ run particle instant_effect{color:16420352} ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^-.25456 ^0.63640 ^ run particle instant_effect{color:16420352} ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^-.38184 ^0.63640 ^ run particle instant_effect{color:16420352} ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^-.50912 ^0.63640 ^ run particle instant_effect{color:16420352} ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^-.63640 ^0.63640 ^ run particle instant_effect{color:16420352} ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^-.63640 ^0.50912 ^ run particle instant_effect{color:16420352} ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^-.63640 ^0.38184 ^ run particle instant_effect{color:16420352} ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^-.63640 ^0.25456 ^ run particle instant_effect{color:16420352} ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^-.63640 ^0.12728 ^ run particle instant_effect{color:16420352} ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^-.63640 ^0.00000 ^ run particle instant_effect{color:16420352} ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^-.63640 ^-.12728 ^ run particle instant_effect{color:16420352} ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^-.63640 ^-.25456 ^ run particle instant_effect{color:16420352} ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^-.63640 ^-.38184 ^ run particle instant_effect{color:16420352} ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^-.63640 ^-.50912 ^ run particle instant_effect{color:16420352} ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^-.63640 ^-.63640 ^ run particle instant_effect{color:16420352} ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^-.50912 ^-.63640 ^ run particle instant_effect{color:16420352} ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^-.38184 ^-.63640 ^ run particle instant_effect{color:16420352} ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^-.25456 ^-.63640 ^ run particle instant_effect{color:16420352} ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^-.12728 ^-.63640 ^ run particle instant_effect{color:16420352} ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^0.00000 ^-.63640 ^ run particle instant_effect{color:16420352} ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^0.12728 ^-.63640 ^ run particle instant_effect{color:16420352} ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^0.25456 ^-.63640 ^ run particle instant_effect{color:16420352} ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^0.38184 ^-.63640 ^ run particle instant_effect{color:16420352} ~ ~ ~ 0 0 0 0 1 force
+execute positioned ^0.50912 ^-.63640 ^ run particle instant_effect{color:16420352} ~ ~ ~ 0 0 0 0 1 force

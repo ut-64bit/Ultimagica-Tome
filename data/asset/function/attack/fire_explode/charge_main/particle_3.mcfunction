@@ -1,0 +1,24 @@
+execute positioned ~0.00000 ~0.1 ~-.50000 run particle firework ~ ~ ~ 0.00000 0.1 -.50000 0.5 0 force
+execute positioned ~0.15451 ~0.1 ~-.47553 run particle firework ~ ~ ~ 0.15451 0.1 -.47553 0.5 0 force
+execute positioned ~0.29389 ~0.1 ~-.40451 run particle firework ~ ~ ~ 0.29389 0.1 -.40451 0.5 0 force
+execute positioned ~0.40451 ~0.1 ~-.29389 run particle firework ~ ~ ~ 0.40451 0.1 -.29389 0.5 0 force
+execute positioned ~0.47553 ~0.1 ~-.15451 run particle firework ~ ~ ~ 0.47553 0.1 -.15451 0.5 0 force
+execute positioned ~0.50000 ~0.1 ~0.00000 run particle firework ~ ~ ~ 0.50000 0.1 0.00000 0.5 0 force
+execute positioned ~0.47553 ~0.1 ~0.15451 run particle firework ~ ~ ~ 0.47553 0.1 0.15451 0.5 0 force
+execute positioned ~0.40451 ~0.1 ~0.29389 run particle firework ~ ~ ~ 0.40451 0.1 0.29389 0.5 0 force
+execute positioned ~0.29389 ~0.1 ~0.40451 run particle firework ~ ~ ~ 0.29389 0.1 0.40451 0.5 0 force
+execute positioned ~0.15451 ~0.1 ~0.47553 run particle firework ~ ~ ~ 0.15451 0.1 0.47553 0.5 0 force
+execute positioned ~0.00000 ~0.1 ~0.50000 run particle firework ~ ~ ~ 0.00000 0.1 0.50000 0.5 0 force
+execute positioned ~-.15451 ~0.1 ~0.47553 run particle firework ~ ~ ~ -.15451 0.1 0.47553 0.5 0 force
+execute positioned ~-.29389 ~0.1 ~0.40451 run particle firework ~ ~ ~ -.29389 0.1 0.40451 0.5 0 force
+execute positioned ~-.40451 ~0.1 ~0.29389 run particle firework ~ ~ ~ -.40451 0.1 0.29389 0.5 0 force
+execute positioned ~-.47553 ~0.1 ~0.15451 run particle firework ~ ~ ~ -.47553 0.1 0.15451 0.5 0 force
+execute positioned ~-.50000 ~0.1 ~0.00000 run particle firework ~ ~ ~ -.50000 0.1 0.00000 0.5 0 force
+execute positioned ~-.47553 ~0.1 ~-.15451 run particle firework ~ ~ ~ -.47553 0.1 -.15451 0.5 0 force
+execute positioned ~-.40451 ~0.1 ~-.29389 run particle firework ~ ~ ~ -.40451 0.1 -.29389 0.5 0 force
+execute positioned ~-.29389 ~0.1 ~-.40451 run particle firework ~ ~ ~ -.29389 0.1 -.40451 0.5 0 force
+execute positioned ~-.15451 ~0.1 ~-.47553 run particle firework ~ ~ ~ -.15451 0.1 -.47553 0.5 0 force
+
+execute if score @s ChargeTime matches 15 run playsound block.anvil.land player @a ~ ~ ~ 0.3 1.8
+execute if score @s ChargeTime matches 20 run playsound block.anvil.land player @a ~ ~ ~ 0.3 1.9
+execute if score @s ChargeTime matches 25 run playsound block.anvil.land player @a ~ ~ ~ 0.3 2
