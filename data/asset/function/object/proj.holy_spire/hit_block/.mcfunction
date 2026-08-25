@@ -4,6 +4,7 @@
 #
 
 # ブロックに刺さったまま止まる
+	tp @s ^ ^ ^-0.4
 	data modify storage asset:context this.State set value "block_idle"
 	data modify storage asset:context StopMove set value true
 

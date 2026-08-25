@@ -18,4 +18,4 @@
 	# 1ステップあたりの移動距離
 	data modify storage asset:object Field.MovePerStep set value 0.25
 	# 拘束時間
-	data modify storage asset:object Field.Duration set value 15
+	data modify storage asset:object Field.Duration set value 10
