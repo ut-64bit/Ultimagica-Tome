@@ -11,4 +11,4 @@
 # ID
 	data modify storage asset:object ID set value "effect.holy_bind"
 # フィールド
-	data modify storage asset:object Field.Duration set value 100
+	data modify storage asset:object Field.Duration set value 240
