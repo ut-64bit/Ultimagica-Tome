@@ -7,6 +7,9 @@
 # ロードアウトのload処理
 	function player_manager:loadout/load
 
+# カスタムエフェクトのload処理
+	function player_manager:effect/load
+
 # スコアボードを宣言する
 	#> クラス・スキルから変更する能力値（1000 = 1.0倍）
 	scoreboard objectives add DamageDealt.physical dummy
