@@ -28,7 +28,7 @@ scoreboard players set #LoadoutPresetIconSlot _ 0
 function player:menu/loadout/icon/build/next
 
 data modify storage player_manager:loadout temp.menu_icon.outer set value {outer_slot:1,title:"アイコン変更",description:"変更先のアイコンを選択",outer_model:"item_frame",contents:[],page:1,total:1}
-execute if score #LoadoutPresetIconCount _ matches 13.. run data modify storage player_manager:loadout temp.menu_icon.outer.description set value "変更先を選択 / クリックで次ページ"
+execute if score #LoadoutPresetIconCount _ matches 13.. run data modify storage player_manager:loadout temp.menu_icon.outer.description set value "クリックで次ページ / 変更先を選択"
 data modify storage player_manager:loadout temp.menu_icon.outer.contents set from storage player_manager:loadout temp.menu_icon.contents
 execute store result storage player_manager:loadout temp.menu_icon.outer.page int 1 run scoreboard players get #LoadoutPresetIconDisplayPage _
 execute store result storage player_manager:loadout temp.menu_icon.outer.total int 1 run scoreboard players get #LoadoutPresetIconTotalPages _
