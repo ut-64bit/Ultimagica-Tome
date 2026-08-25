@@ -12,6 +12,7 @@ effect clear @a[tag=Game.Ready] glowing
 effect clear @a[tag=Game.ObserverReady] glowing
 team leave @a[tag=Game.Ready]
 team leave @a[tag=Game.ObserverReady]
+team leave @a[team=Game.Battle]
 tag @a remove Game.Ready
 tag @a remove Game.Participant
 tag @a remove Game.Active

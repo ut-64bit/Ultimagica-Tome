@@ -16,6 +16,12 @@ team modify Game.Observe displayName {"text":"Ready Observers","color":"aqua"}
 team modify Game.Observe color aqua
 team modify Game.Observe prefix {"text":"[OBSERVE] ","color":"aqua"}
 
+team add Game.Battle
+team modify Game.Battle displayName {"text":"Battle Participants","color":"white"}
+team modify Game.Battle color white
+team modify Game.Battle seeFriendlyInvisibles false
+team modify Game.Battle nametagVisibility hideForOwnTeam
+
 # ゲームの初期化
 execute unless data storage world_manager:game state run data modify storage world_manager:game state set value "lobby"
 execute unless score #Game Game.Timer matches 0.. run scoreboard players set #Game Game.Timer 0
