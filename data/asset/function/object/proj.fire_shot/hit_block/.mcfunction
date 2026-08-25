@@ -8,5 +8,8 @@
 	particle smoke ~ ~ ~ 0.1 0.1 0.1 0 3 normal
 	playsound block.fire.extinguish neutral @a ~ ~ ~ 1 1.5
 
+# 系統スキルの残留炎
+	function player:skill/school_fire_mastery/
+
 # 弾丸を破壊する
 	function api:common/auto_kill

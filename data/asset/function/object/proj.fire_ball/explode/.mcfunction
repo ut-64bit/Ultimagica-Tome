@@ -12,13 +12,13 @@
 	execute as @e[tag=_ray,distance=..100] unless function api:damage/is_invincible run function asset:object/proj.fire_ball/explode/give_damage
 
 # 系統スキルの残留炎
-	execute positioned ~00.00000 ~ ~-1.6 run function player:skill/school_fire_damage/place
-	execute positioned ~01.38564 ~ ~-0.8 run function player:skill/school_fire_damage/place
-	execute positioned ~01.38564 ~ ~00.8 run function player:skill/school_fire_damage/place
-	execute positioned ~00.00000 ~ ~01.6 run function player:skill/school_fire_damage/place
-	execute positioned ~-1.38564 ~ ~00.8 run function player:skill/school_fire_damage/place
-	execute positioned ~-1.38564 ~ ~-0.8 run function player:skill/school_fire_damage/place
-	execute positioned ~00.00 ~ ~00.00 run function player:skill/school_fire_damage/place
+	execute positioned ~00.00000 ~ ~-1.6 run function player:skill/school_fire_mastery/
+	execute positioned ~01.38564 ~ ~-0.8 run function player:skill/school_fire_mastery/
+	execute positioned ~01.38564 ~ ~00.8 run function player:skill/school_fire_mastery/
+	execute positioned ~00.00000 ~ ~01.6 run function player:skill/school_fire_mastery/
+	execute positioned ~-1.38564 ~ ~00.8 run function player:skill/school_fire_mastery/
+	execute positioned ~-1.38564 ~ ~-0.8 run function player:skill/school_fire_mastery/
+	execute positioned ~00.00000 ~ ~00.0 run function player:skill/school_fire_mastery/
 
 # 演出
 	particle explosion_emitter ~ ~ ~ 0.0 0.0 0.0 0 1 force

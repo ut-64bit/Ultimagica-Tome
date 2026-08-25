@@ -25,7 +25,7 @@ execute if score @s General.Tick matches 40 run data merge entity @s { transform
 # 演出
 	execute if score @s General.Tick matches ..40 run function asset:object/proj.fire_explode_explode/tick/particle
 	execute if score @s General.Tick matches 50 run particle large_smoke ~ ~ ~ 0 0 0 0.1 10 force
-	execute if score @s General.Tick matches 50 run playsound block.fire.extinguish player @a ~ ~ ~ 0.25 0
+	execute if score @s General.Tick matches 50 run playsound block.fire.extinguish player @a ~ ~ ~ 1 0.5
 
 # あとしまつ
 	execute as @n[tag=_owner,distance=..1000] run tag @s remove _owner

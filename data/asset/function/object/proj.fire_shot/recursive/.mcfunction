@@ -13,3 +13,6 @@
 	execute if predicate lib:random_chance/30 run particle small_flame ^ ^ ^ 0 0 0 0.01 1 normal
 	execute if predicate lib:random_chance/50 run particle dust_color_transition{from_color:16750848,to_color:16721408,scale:0.8} ^ ^ ^ 0 0 0 0 1 normal
 	execute if predicate lib:random_chance/50 run particle dust_color_transition{from_color:16721408,to_color:4456448,scale:1.0} ^ ^ ^ 0.1 0.1 0.1 0 2 force
+
+# 系統スキルの残留炎
+	execute if predicate lib:random_chance/1 run function player:skill/school_fire_mastery/

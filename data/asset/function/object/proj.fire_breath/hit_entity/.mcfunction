@@ -9,6 +9,9 @@
 	execute positioned ~-0.5 ~-0.5 ~-0.5 as @n[type=!#lib:no_living,tag=!_owner,tag=!_this,tag=!Game.Observer,tag=!Player.NoCollison,dx=0] unless function api:damage/is_invincible \
 		run function api:damage/give_damage
 
+# 系統スキルの残留炎
+	function player:skill/school_fire_mastery/
+
 # 演出
 	execute if data storage api: out{GiveDamage:true} run playsound entity.player.hurt_on_fire player @a ~ ~ ~ 1 1
 

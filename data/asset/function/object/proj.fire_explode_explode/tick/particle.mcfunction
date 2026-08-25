@@ -9,5 +9,5 @@ particle flash{color:-9895936} ~ ~ ~ 2 2 2 1 1 normal
 particle flash{color:-13631488} ~ ~ ~ 2 2 2 1 1 normal
 particle flash{color:1} ~ ~ ~ 2 2 2 1 1 normal
 particle explosion ~ ~ ~ 3 3 3 2 1 force
-playsound entity.generic.explode player @a ~ ~ ~ 0.1 1
-playsound item.firecharge.use player @a ~ ~ ~ 0.2 1
+playsound entity.generic.explode player @a ~ ~ ~ 1.5 1
+playsound item.firecharge.use player @a ~ ~ ~ 1.5 1
