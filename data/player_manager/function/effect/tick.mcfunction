@@ -1,4 +1,5 @@
 #> player_manager:effect/tick
+# プレイヤーが持つ全Effectを1tick分更新する。
 # @within player:context this
 
 execute unless data storage player:context this.Effects run data modify storage player:context this.Effects set value []

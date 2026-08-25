@@ -1,4 +1,5 @@
 #> api:effect/remove
+# 対象プレイヤーから指定IDのEffectを解除する。
 # @input storage api: in.ID : string
 # @output storage api: out.EffectResult : bool
 # @api

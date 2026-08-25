@@ -1,4 +1,5 @@
 #> player_manager:effect/operation/give/reapply/refresh
+# 既存Effectの時間とFieldを新しい付与内容で更新する。
 
 data modify storage effect:context Current.Duration set from storage effect:context Request.Duration
 data modify storage effect:context Current.Age set value 0

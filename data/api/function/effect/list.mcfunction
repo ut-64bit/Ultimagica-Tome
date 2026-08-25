@@ -1,4 +1,5 @@
 #> api:effect/list
+# 対象プレイヤーが持つ全Effectの一覧を取得する。
 # @output storage api: out.Effects
 # @api
 

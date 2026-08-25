@@ -1,4 +1,5 @@
 #> player_manager:effect/operation/give
+# 既存Effectの有無に応じて新規付与または再付与処理へ振り分ける。
 
 data modify storage effect:context Request set from storage effect:context Operation.Request
 function player_manager:effect/operation/give/take_existing.m with storage effect:context Request

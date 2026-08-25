@@ -1,4 +1,5 @@
 #> player_manager:effect/operation/give/reapply/extend
+# 既存Effectの残り時間を加算し、givenメソッドを再度呼び出す。
 
 execute store result score #EffectDuration _ run data get storage effect:context Current.Duration
 execute store result score #EffectGrantDuration _ run data get storage effect:context Request.Duration

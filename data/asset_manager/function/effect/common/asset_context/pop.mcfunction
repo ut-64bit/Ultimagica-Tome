@@ -1,4 +1,5 @@
 #> asset_manager:effect/common/asset_context/pop
+# Effectメソッド呼び出し前に退避した共通値をasset:contextへ戻す。
 
 data remove storage asset:context Duration
 data remove storage asset:context Age

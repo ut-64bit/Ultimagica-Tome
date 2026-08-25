@@ -1,4 +1,5 @@
 #> api:effect/core/clear_group_player
+# 必要に応じてプレイヤーデータを読み込み、グループ解除要求を実行する。
 
 execute if entity @s[tag=_this] run return run function player_manager:effect/request/clear_group
 function player_manager:common/this/stash

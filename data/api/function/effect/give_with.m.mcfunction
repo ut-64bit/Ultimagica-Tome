@@ -1,4 +1,5 @@
 #> api:effect/give_with.m
+# Fieldの上書き値を指定してEffectを付与する。
 # 引数: {ID:"effect_id",Field:{...}}
 
 $data modify storage api: in.ID set value "$(ID)"

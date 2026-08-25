@@ -1,4 +1,5 @@
 #> player_manager:effect/operation/give/new
+# 新しいEffectインスタンスを構築し、givenメソッドを呼び出す。
 
 data modify storage effect:context Current set value {ID:"",Duration:1,Age:0,Stacks:1,Groups:[],Reapply:"refresh",MaxStacks:1,Field:{}}
 data modify storage effect:context Current.ID set from storage effect:context Request.ID

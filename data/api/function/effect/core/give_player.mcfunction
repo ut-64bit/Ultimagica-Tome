@@ -1,4 +1,5 @@
 #> api:effect/core/give_player
+# 必要に応じてプレイヤーデータを読み込み、Effect付与処理を実行する。
 
 execute if entity @s[tag=_this] run return run function api:effect/core/give
 function player_manager:common/this/stash

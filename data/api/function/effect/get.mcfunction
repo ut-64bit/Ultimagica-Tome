@@ -1,4 +1,5 @@
 #> api:effect/get
+# 対象プレイヤーが持つ指定IDのEffectデータを取得する。
 # @input storage api: in.ID : string
 # @output storage api: out.EffectFound, out.Effect
 # @api

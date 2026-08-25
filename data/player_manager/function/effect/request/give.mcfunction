@@ -1,4 +1,5 @@
 #> player_manager:effect/request/give
+# 付与データを検証し、Effect付与操作をキューへ追加する。
 # @within player:context this
 # @input storage api: in.Effect
 

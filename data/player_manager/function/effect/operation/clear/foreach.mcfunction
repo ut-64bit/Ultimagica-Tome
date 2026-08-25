@@ -1,4 +1,5 @@
 #> player_manager:effect/operation/clear/foreach
+# 全解除対象のEffectを1件ずつ取り出してremoveを呼び出す。
 
 data modify storage effect:context Current set from storage effect:context Queue[0]
 data remove storage effect:context Queue[0]

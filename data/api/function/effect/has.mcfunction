@@ -1,4 +1,5 @@
 #> api:effect/has
+# 対象プレイヤーが指定IDのEffectを持っているか判定する。
 # @input storage api: in.ID : string
 # @output storage api: out.EffectFound
 # @api

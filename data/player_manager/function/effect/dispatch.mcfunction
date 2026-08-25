@@ -1,4 +1,5 @@
 #> player_manager:effect/dispatch
+# 現在処理中のEffectをasset:contextへ展開し、指定メソッドを呼び出す。
 # 引数: {Event:"given|tick|end|remove"}
 
 function asset_manager:common/id/stash

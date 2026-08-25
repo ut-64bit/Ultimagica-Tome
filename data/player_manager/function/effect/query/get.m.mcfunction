@@ -1,4 +1,5 @@
 #> player_manager:effect/query/get.m
+# 指定IDのEffectを検索し、取得結果をapi:outへ書き出す。
 
 data modify storage api: out.EffectFound set value false
 data remove storage api: out.Effect

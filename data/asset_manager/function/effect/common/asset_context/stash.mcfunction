@@ -1,4 +1,5 @@
 #> asset_manager:effect/common/asset_context/stash
+# asset:context直下のEffect共通値をスタックへ退避する。
 
 data modify storage asset:context EffectStashStack append value {}
 data modify storage asset:context EffectStashStack[-1].Duration set from storage asset:context Duration

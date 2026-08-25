@@ -1,4 +1,5 @@
 #> player_manager:effect/operation/give/finalize
+# 付与後の自己解除・即時終了を処理し、継続するEffectを保存する。
 
 execute if data storage effect:context Current{Removed:true} run data modify storage effect:context Reason set value "self"
 execute if data storage effect:context Current{Removed:true} run function player_manager:effect/dispatch {Event:"remove"}

@@ -1,4 +1,5 @@
 #> asset_manager:effect/call_method/call_super_methods/
+# 登録された親Effectを取得し、同名メソッドを順番に呼び出す。
 
 data modify storage api: in.AssetID set from storage asset:context id
 function api:registry/please

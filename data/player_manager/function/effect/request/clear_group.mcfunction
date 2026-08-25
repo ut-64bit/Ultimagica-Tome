@@ -1,4 +1,5 @@
 #> player_manager:effect/request/clear_group
+# 指定グループの一括解除操作をキューへ追加する。
 # @input storage api: in.EffectGroup
 
 data modify storage api: out.EffectResult set value false

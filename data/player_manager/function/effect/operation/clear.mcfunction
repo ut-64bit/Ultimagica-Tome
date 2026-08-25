@@ -1,4 +1,5 @@
 #> player_manager:effect/operation/clear
+# 全Effectのremoveを呼び出してEffect一覧を空にする。
 
 execute unless data storage player:context this.Effects[0] run return 0
 data modify storage effect:context Queue set from storage player:context this.Effects

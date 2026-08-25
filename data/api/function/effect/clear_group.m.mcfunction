@@ -1,4 +1,5 @@
 #> api:effect/clear_group.m
+# 指定グループのEffectを解除するマクロAPIを呼び出す。
 # 引数: {Group:"buff|debuff|..."}
 
 $data modify storage api: in.Group set value "$(Group)"

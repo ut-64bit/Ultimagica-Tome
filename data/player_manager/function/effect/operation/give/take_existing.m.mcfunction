@@ -1,4 +1,5 @@
 #> player_manager:effect/operation/give/take_existing.m
+# 同じIDの既存Effectを一覧から取り出してCurrentへ移す。
 
 data remove storage effect:context Current
 $data modify storage effect:context Current set from storage player:context this.Effects[{ID:"$(ID)"}]

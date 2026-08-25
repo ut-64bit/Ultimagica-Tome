@@ -1,4 +1,5 @@
 #> player_manager:effect/operation/remove
+# 指定ID以外のEffectを残し、該当Effectを解除する。
 
 execute unless data storage player:context this.Effects[0] run return 0
 data modify storage effect:context Queue set from storage player:context this.Effects

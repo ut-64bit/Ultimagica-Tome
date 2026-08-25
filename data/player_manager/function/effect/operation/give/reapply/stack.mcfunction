@@ -1,4 +1,5 @@
 #> player_manager:effect/operation/give/reapply/stack
+# スタック数を上限まで増やし、付与時間とFieldを更新する。
 
 execute store result score #EffectStacks _ run data get storage effect:context Current.Stacks
 execute store result score #EffectMaxStacks _ run data get storage effect:context Request.MaxStacks

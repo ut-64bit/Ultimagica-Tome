@@ -1,4 +1,5 @@
 #> api:effect/core/give
+# Effectを登録し、抽象判定と付与データの構築を行う。
 # @within player:context this
 
 data modify storage api: out.EffectResult set value false

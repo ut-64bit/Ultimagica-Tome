@@ -1,4 +1,5 @@
 #> player_manager:effect/tick/foreach
+# Effectを1件更新し、継続・自己解除・期限切れを処理する。
 
 data modify storage effect:context Current set from storage effect:context Queue[0]
 data remove storage effect:context Queue[0]

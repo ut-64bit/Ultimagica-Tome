@@ -1,4 +1,5 @@
 #> asset:effect/movement_speed_down/register
+# 移動速度低下Effectの継承関係と既定値を登録する。
 
 data modify storage asset:effect Extends append value "abstract.effect"
 function asset:effect/_extends/

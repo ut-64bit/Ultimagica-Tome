@@ -1,4 +1,5 @@
 #> api:effect/clear_group
+# 指定グループに属するEffectを対象プレイヤーからすべて解除する。
 # @input storage api: in.Group : string
 # @api
 

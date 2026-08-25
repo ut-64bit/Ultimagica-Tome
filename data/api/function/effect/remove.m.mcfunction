@@ -1,4 +1,5 @@
 #> api:effect/remove.m
+# IDを指定してEffectを解除するマクロAPIを呼び出す。
 # 引数: {ID:"effect_id"}
 
 $data modify storage api: in.ID set value "$(ID)"

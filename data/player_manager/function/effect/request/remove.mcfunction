@@ -1,4 +1,5 @@
 #> player_manager:effect/request/remove
+# 指定IDのEffect解除操作をキューへ追加する。
 # @input storage api: in.EffectID
 
 data modify storage api: out.EffectResult set value false

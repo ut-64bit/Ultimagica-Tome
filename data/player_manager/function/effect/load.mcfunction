@@ -1,6 +1,7 @@
 #> player_manager:effect/load
-
+# Effectシステムが使用する一時ストレージを初期化する。
 # data removeはストレージIDだけでは実行できないため、使用するルートキーを個別に初期化する。
+
 data remove storage effect:runtime Busy
 data remove storage effect:runtime Operations
 
