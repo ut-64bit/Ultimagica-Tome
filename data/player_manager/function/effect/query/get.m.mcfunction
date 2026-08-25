@@ -1,5 +1,4 @@
 #> player_manager:effect/query/get.m
-# 引数: {EffectID:"effect_id"}
 
 data modify storage api: out.EffectFound set value false
 data remove storage api: out.Effect
