@@ -11,8 +11,6 @@ effect clear @a[tag=Game.Ready] glowing
 team leave @a[tag=Game.Ready]
 tag @a remove Game.Ready
 
-scoreboard players set @a[tag=Game.Active] Game.Deaths 0
-
 execute as @a[tag=Game.Active] run function api:player/invincibility/clear
 gamemode adventure @a[tag=Game.Active]
 gamerule pvp true

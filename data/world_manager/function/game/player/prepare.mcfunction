@@ -8,7 +8,6 @@ function api:player/init
 clear @s
 function player_manager:loadout/apply
 
-scoreboard players set @s Game.Deaths 0
 gamemode adventure @s
 
 # Attribute

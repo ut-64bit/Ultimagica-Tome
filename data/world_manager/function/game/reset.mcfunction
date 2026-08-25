@@ -7,7 +7,6 @@ execute if data storage world_manager:game runtime.stage run function world_mana
 data modify storage world_manager:game state set value "lobby"
 data remove storage world_manager:game auto_start_pending
 scoreboard players set #Game Game.Timer 0
-scoreboard players reset @a Game.Deaths
 
 effect clear @a[tag=Game.Ready] glowing
 effect clear @a[tag=Game.ObserverReady] glowing

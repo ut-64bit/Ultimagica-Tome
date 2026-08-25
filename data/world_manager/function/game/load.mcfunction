@@ -4,7 +4,7 @@
 #   "lobby" | "countdown" | "playing" | "ending"
 
 scoreboard objectives add Game.Timer dummy
-scoreboard objectives add Game.Deaths deathCount
+scoreboard objectives add Game.Deaths custom:time_since_death
 
 team add Game.Ready
 team modify Game.Ready displayName {"text":"Ready Players","color":"green"}
