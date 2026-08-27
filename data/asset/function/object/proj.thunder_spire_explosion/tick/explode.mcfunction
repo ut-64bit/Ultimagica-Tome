@@ -10,5 +10,5 @@
 
 	data modify storage api: in set value { Damage:1, Element:"thunder", School:"thunder", Tags:["magecraft","spear"] }
 	function api:damage/create_attack_data
-	execute as @e[tag=_ray,distance=..100] unless function api:damage/is_invincible run function api:damage/give_damage.m with storage api: out
+	execute as @e[tag=_ray,distance=..100] unless function api:damage/is_invincible run function asset:object/proj.thunder_spire_explosion/tick/damage
 	tag @e[tag=_ray,distance=..100] remove _ray

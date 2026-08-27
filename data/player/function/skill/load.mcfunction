@@ -23,7 +23,7 @@ data modify storage player_manager:loadout registry.skill append value {id:"scho
 data modify storage player_manager:loadout registry.skill append value {id:"school_gravity_damage",description:[{text:"重力魔術の攻撃を15%強化する",color:"gray"},"\n\n重力魔術は、魔術で物体を動かす研究で生まれた\n結晶魔術から着想を得て始まったそれは その過程で、人は新たな知識を得ることになる\n星の力を。そして宇宙を"],cost:3}
 data modify storage player_manager:loadout registry.skill append value {id:"school_fire_mastery",description:{text:"劫火の魔術が炎を残す",color:"gray"},cost:3}
 data modify storage player_manager:loadout registry.skill append value {id:"school_water_damage",description:[{text:"流水の魔術の攻撃を15%強化する",color:"gray"},"\n\n流水の魔術は、水を運ぶために生まれた魔術である\n重力魔術から派生したそれは、極限まで術式が単純化され 高い魔力効率を持つ\n民間に広く浸透していて、農耕でも利用される"],cost:3}
-data modify storage player_manager:loadout registry.skill append value {id:"school_thunder_damage",description:{text:"ヴォルテミアの雷魔術の攻撃を15%強化する",color:"gray"},cost:3}
+data modify storage player_manager:loadout registry.skill append value {id:"school_thunder_mastery",description:{text:"ヴォルテミアの雷魔術の攻撃に状態異常「感電」を付与する",color:"gray"},cost:3}
 data modify storage player_manager:loadout registry.skill append value {id:"school_elf_damage",description:[{text:"森人の祈祷の攻撃を15%強化する",color:"gray"},"\n\n森人の祈祷は、森人が使う祈祷である\n森人は、汚染領域の一つ「嵐の樹海」で暮らしている種族\n見目麗しく、寿命が長いことから その血肉は不死の霊薬になるとされる\n主に王国の闇市で、奴隷として高値で取引される"],cost:3}
 # data modify storage player_manager:loadout registry.skill append value {id:"school_gem_damage",description:[{text:"宝石魔術の攻撃を15%強化する",color:"gray"},"\n\n宝石魔術は、魔力と宝石の関係を調べる中で発見された\nこの魔術によって、魔法の保存が可能となり 魔術師の象徴的な杖や、魔道具が生まれた"],cost:3}
 # data modify storage player_manager:loadout registry.skill append value {id:"school_dragon_blood_damage",description:[{text:"竜血の祈祷の攻撃を15%強化する",color:"gray"},"\n\n竜血の祈祷は、王族の持つ力 竜の血を信仰する祈祷\n"],cost:3}
