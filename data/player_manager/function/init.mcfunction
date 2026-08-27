@@ -5,6 +5,9 @@
 #
 # @within api:player/init または player_manager:tick
 
+# 前回の試合から残った一時Effectを、各Effectのremoveを通して解除する。
+function player_manager:effect/request/clear
+
 # クラス・スキルから能力値を再構築する。
 function player_manager:init/stats
 

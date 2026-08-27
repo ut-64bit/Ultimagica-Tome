@@ -42,6 +42,9 @@
 	execute if entity @s[gamemode=spectator] run tag @s add Player.NoCollison
 	execute if entity @s[gamemode=creative] run tag @s add Player.NoCollison
 
+# カスタムエフェクト
+	function player_manager:effect/tick
+
 # メイン処理
 	function player_manager:attack/combo/tick
 	function player_manager:invincibility/tick
