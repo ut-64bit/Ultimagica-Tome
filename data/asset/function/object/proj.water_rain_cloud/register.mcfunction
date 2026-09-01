@@ -12,4 +12,4 @@
 	data modify storage asset:object ID set value "proj.water_rain_cloud"
 # フィールド
 	# 持続
-	data modify storage asset:object Field.Duration set value 200
+	data modify storage asset:object Field.Duration set value 140
