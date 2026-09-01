@@ -13,6 +13,7 @@ function asset:object/super.init
 	execute on passengers on passengers run attribute @s scale modifier add shield 1 add_multiplied_total
 	execute on passengers on passengers run attribute @s scale base set 1
 	execute on passengers on passengers run effect give @s invisibility infinite 0 true
+	execute on passengers on passengers run effect give @s resistance 1 4 true
 	rotate @s ~ ~
 
 # 数制限
