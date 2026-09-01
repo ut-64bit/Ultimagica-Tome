@@ -12,9 +12,9 @@
 	data modify storage asset:object ID set value "proj.fire_wall_runner"
 # フィールド
 	# 飛距離
-	data modify storage asset:object Field.Range set value 30
+	data modify storage asset:object Field.Range set value 40
 	# 移動速度
-	data modify storage asset:object Field.Speed set value 3
+	data modify storage asset:object Field.Speed set value 4
 	# 1ステップあたりの移動距離
 	data modify storage asset:object Field.MovePerStep set value 0.5
 	# 攻撃を設置する間隔
