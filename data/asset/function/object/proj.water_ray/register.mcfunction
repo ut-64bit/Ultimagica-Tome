@@ -12,8 +12,8 @@
 	data modify storage asset:object ID set value "proj.water_ray"
 # フィールド
 	# 飛距離
-	data modify storage asset:object Field.Range set value 80
+	data modify storage asset:object Field.Range set value 100
 	# 移動速度
-	data modify storage asset:object Field.Speed set value 40
+	data modify storage asset:object Field.Speed set value 50
 	# 1ステップあたりの移動距離
 	data modify storage asset:object Field.MovePerStep set value 0.25
