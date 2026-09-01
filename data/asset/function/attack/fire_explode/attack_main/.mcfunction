@@ -2,3 +2,4 @@
 #
 
 execute if score @s ChargePhase matches 1 run function asset:attack/fire_explode/attack_main/normal/
+execute if score @s ChargePhase matches 2 run function asset:attack/fire_explode/attack_main/charge/

@@ -19,6 +19,6 @@ execute positioned ~-.40451 ~0.1 ~-.29389 run particle firework ~ ~ ~ -.40451 0.
 execute positioned ~-.29389 ~0.1 ~-.40451 run particle firework ~ ~ ~ -.29389 0.1 -.40451 0.5 0 force
 execute positioned ~-.15451 ~0.1 ~-.47553 run particle firework ~ ~ ~ -.15451 0.1 -.47553 0.5 0 force
 
-execute if score @s ChargeTime matches 15 run playsound block.anvil.land player @a ~ ~ ~ 0.3 1.8
-execute if score @s ChargeTime matches 20 run playsound block.anvil.land player @a ~ ~ ~ 0.3 1.9
-execute if score @s ChargeTime matches 25 run playsound block.anvil.land player @a ~ ~ ~ 0.3 2
+execute if score @s ChargeTime matches 40 run playsound block.anvil.land player @a ~ ~ ~ 0.3 1.8
+execute if score @s ChargeTime matches 45 run playsound block.anvil.land player @a ~ ~ ~ 0.3 1.9
+execute if score @s ChargeTime matches 50 run playsound block.anvil.land player @a ~ ~ ~ 0.3 2

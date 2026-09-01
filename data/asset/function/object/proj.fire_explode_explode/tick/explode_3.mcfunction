@@ -1,4 +1,4 @@
-#> asset:object/proj.fire_explode_explode/tick/explode_2
+#> asset:object/proj.fire_explode_explode/tick/explode_3
 #
 
 # ダメージを与える

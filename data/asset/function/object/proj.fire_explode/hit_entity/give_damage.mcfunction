@@ -4,4 +4,4 @@
 function api:damage/give_damage
 
 # 怯む
-	function api:player/stagger {duration:8}
+	function api:player/stagger {duration:15}
