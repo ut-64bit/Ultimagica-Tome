@@ -5,6 +5,10 @@
 #
 # @within api:player/init または player_manager:tick
 
+# 現在の状態を上書きする前にexitを呼び、攻撃や回避の一時状態を解除する。
+# 攻撃状態は遷移先を指定せず終了するため、キャンセルとして処理される。
+function player_manager:fsm/stop
+
 # 前回の試合から残った一時Effectを、各Effectのremoveを通して解除する。
 function player_manager:effect/request/clear
 
