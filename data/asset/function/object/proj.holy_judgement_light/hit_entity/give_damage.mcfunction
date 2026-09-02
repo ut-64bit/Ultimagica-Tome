@@ -5,4 +5,4 @@ function api:damage/give_damage
 
 # 怯む
 	function api:player/stagger {duration:8}
-effect give @s slowness 1 9 true
+	effect give @s slowness 1 9 true

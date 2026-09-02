@@ -1,4 +1,4 @@
-#> api:object/summon.m
+#> api:object/summon_with.m
 #
 # IDからオブジェクトを召喚する
 #

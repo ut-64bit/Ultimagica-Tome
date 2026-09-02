@@ -19,4 +19,4 @@
 	data modify storage asset:context this.RemainingRange set from storage asset:context this.Range
 
 # tag
-	tag @s add Object.projectile
+	tag @s add Object.Projectile

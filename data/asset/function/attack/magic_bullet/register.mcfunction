@@ -19,3 +19,4 @@
 
 # フィールド
 	# data modify storage asset:attack Field.Value set value
+	# data modify storage asset:attack Combo.NextAttackID set value

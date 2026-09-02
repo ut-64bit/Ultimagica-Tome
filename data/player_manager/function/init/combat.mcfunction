@@ -3,12 +3,10 @@
 # FSMと攻撃中に使う一時状態を初期化する。
 # @within function player_manager:init
 
+function player_manager:fsm/request {state:"idle"}
+function player_manager:fsm/flush
 data modify storage player:context this.StateMachine set value {current:"idle",time:0,state_data:{}}
 data remove storage player:context this.ActionBlock
-
-scoreboard players set @s GuardTime 0
-scoreboard players set @s GuardLockTime 0
-scoreboard players set @s GuardRepeatCount 0
 
 attribute @s movement_speed modifier remove player:attack
 attribute @s movement_speed modifier remove player:charge
