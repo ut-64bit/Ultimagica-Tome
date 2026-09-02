@@ -10,7 +10,7 @@ function asset:object/super.init
 	execute if data storage asset:context this.Delay unless data storage asset:context this{Delay:0} run data modify storage asset:context this.State set value "delay"
 
 # AttackDataを生成する
-	data modify storage api: in set value { Damage:5, Element:"light", School:"holy", Tags:["prayer","beam"] }
+	data modify storage api: in set value { Damage:6, Element:"light", School:"holy", Tags:["prayer","beam"] }
 	function api:damage/create_attack_data
 	data modify storage asset:context this.AttackData append from storage api: out.AttackData
 
