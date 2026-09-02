@@ -28,7 +28,11 @@
 							"function": "set_lore",
 							"lore": [
 								{
-									"text": "限界まで圧縮された炎の塊を放つ",
+									"text": "視点先に炎の柱を作り出す",
+									"color": "gray"
+								},
+								{
+									"text": "タメると限界まで圧縮された炎の塊を放つ",
 									"color": "gray"
 								},
 								{

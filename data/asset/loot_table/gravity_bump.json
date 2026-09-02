@@ -30,6 +30,10 @@
 								{
 									"text": "地面を引き抜き棘に変え突き刺す",
 									"color": "gray"
+								},
+								{
+									"text": "タメで大量の棘を引き抜く",
+									"color": "gray"
 								}
 							],
 							"mode": "append"
