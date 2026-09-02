@@ -7,7 +7,9 @@
 	data modify storage asset:attack ID set value "holy_spire_wave"
 
 # チャージ時間
-	data modify storage asset:attack ChargeTime append value 10
+	data modify storage api: in.Skill set value "school_saint_mastery"
+	execute if function player_manager:skill/has run data modify storage asset:attack ChargeTime append value 7
+	execute unless function player_manager:skill/has run data modify storage asset:attack ChargeTime append value 10
 
 # チャージ完了後、保持できるか
 	data modify storage asset:attack IsHoldable set value false
