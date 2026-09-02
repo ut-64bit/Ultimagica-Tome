@@ -32,3 +32,4 @@
 
 # 演出
 	playsound entity.breeze.land player @s ~ ~ ~ 1 0.5 1
+	playsound entity.breeze.land player @a[tag=!_this] ~ ~ ~ 1 0.5
