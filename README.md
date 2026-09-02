@@ -1,6 +1,6 @@
 # Ultimagica Tome
 
-Minecraft Java Edition 1.21.11向けデータパックです。
+Minecraft Java Edition 26.1.2向けデータパックです。
 
 ## 開発者向けドキュメント
 

@@ -1,6 +1,6 @@
 # カスタムEffectシステム 利用ガイド
 
-この文書は、Ultimagica Tomeの実装を知らない開発者が、Minecraft Java Edition 1.21.11でカスタムEffectを作成・付与・解除できるようになることを目的としています。
+この文書は、Ultimagica Tomeの実装を知らない開発者が、Minecraft Java Edition 26.1.2でカスタムEffectを作成・付与・解除できるようになることを目的としています。
 
 ## 1. Effectシステムとは
 
