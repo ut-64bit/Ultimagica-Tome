@@ -9,20 +9,27 @@
 	},
 	{
 		"function": "set_item",
-		"item": "stick"
+		"item": "player_head"
+	},
+	{
+		"function": "fill_player_head",
+		"entity": "this"
+	},
+	{
+		"function": "set_components",
+		"components": {
+			"max_stack_size": 1,
+			"item_model": "ut_magic:weapon",
+			"equippable": {
+				"slot": "saddle"
+			}
+		}
 	},
 	{
 		"function": "set_custom_data",
 		"tag": {
 			"ID": "magic_rod",
 			"AttackID": "magic_bullet"
-		}
-	},
-	{
-		"function": "set_components",
-		"components": {
-			"max_stack_size": 1,
-			"item_model": "ut_magic:weapon"
 		}
 	},
 	{
