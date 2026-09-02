@@ -10,5 +10,8 @@
 # ロビー
 	execute if data storage world_manager:game {state:"lobby"} run return run function player:menu/click/3/menu/lobby
 
+# 待機中
+	execute if entity @s[tag=Game.Waiting] run return run function player:menu/click/3/menu/lobby
+
 # メインメニュー
 	function player:menu/click/3/menu/main
