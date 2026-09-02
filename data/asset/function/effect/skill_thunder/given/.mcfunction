@@ -1,7 +1,7 @@
 #> asset:effect/skill_thunder/given/
 
 function lib:motion/reset
-function api:player/stagger {duration:10}
+function api:player/stagger {duration:20}
 
 attribute @s movement_speed modifier remove effect:skill_thunder
 attribute @s movement_speed modifier add effect:skill_thunder -0.5 add_multiplied_base

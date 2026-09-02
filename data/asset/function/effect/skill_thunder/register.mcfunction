@@ -12,6 +12,6 @@
 # 再付与時の動作
 	data modify storage asset:effect Reapply set value "ignore"
 # 効果時間
-	data modify storage asset:effect Duration set value 10
+	data modify storage asset:effect Duration set value 20
 # フィールド
 	data modify storage asset:effect Field set value {}
